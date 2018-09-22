@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>The Dictionary of Earth - NASA SpaceApp</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../dc/fa/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <style type="text/css">
+    html,
+    body,
+    header,
+    .view {
+        height: 100%;
+    }
+
+    @media (max-width: 740px) {
+        html,
+        body,
+        header,
+        .view {
+            height: 1000px;
+        }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+        html,
+        body,
+        header,
+        .view {
+            height: 650px;
+        }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+        .navbar:not(.top-nav-collapse) {
+            background: #1C2331!important;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+        <strong>Dictionary of Earth</strong>
+      </a>
+        </div>
+
+        <a href="dash.html"><button class="btn btn-success" style="float: left;">Dashboard</button></a>
+
+        <a href="#"><button class="btn btn-indigo" style="float: right;" onclick="outUser(event)">Logout</button></a>
+
+
+
+    </nav>
+    <!-- Navbar -->
+    <!-- Full Page Intro -->
+    <div class="view full-page-intro" style="background-image: url('img/earth-min.jpg'); background-repeat: no-repeat; height: 100vh; background-size: cover; overflow-y: auto !important;">
+        <!-- Mask & flexbox options-->
+        <div class=" d-flex justify-content-center" style="overflow-y: auto; position: relative; margin-top: 15vh;">
+            <!-- Content -->
+            <div class="container">
+                <!--Grid row-->
+                <div class="row wow fadeIn">
+                    <!--Grid column-->
+                    <div class="col-md-1 mb-1 white-text text-center text-md-left">
+                        &nbsp;
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-md-10 col-xl-10 mb-4">
+                        <!--Card-->
+                        <div class="card">
+                            <!--Card content-->
+                            <div class="card-body">
+                                <!-- Form -->
+
+                                    <!-- Heading -->
+                                    <h5 class="dark-grey-text text-left">
+                                    <strong>Click the correct option!</strong>
+                                  </h5>
+
+                                  <hr>
+
+                                  <div id="quiz-container" class="card-columns">
+                                    Loading cards...
+                                </div>
+
+
+
+                                <!-- Form -->
+                            </div>
+                        </div>
+
+
+                        <!--/.Card-->
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </div>
+            <!-- Content -->
+        </div>
+        <!-- Mask & flexbox options-->
+    </div>
+
+    <!-- Full Page Intro -->
+    <!--/.Footer-->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Initializations -->
+    <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+
+    $( document ).ready(function() {
+        fetchCards();
+    });
+
+    function fetchCards(){
+
+        var userid = getCookie("userid");
+
+        $.ajax({
+            type: "GET",
+            url: "http://192.168.43.128/spaceapps/eapi/api.php",
+            data: { command: "fetchSug", userid: userid}
+        }).done(function(result) {
+
+            console.log(result);
+
+            var res = JSON.parse(result);
+
+            var data = res.message;
+
+            if (res.status - 2 + 1 + 1 == 0) {
+
+                $('#quiz-container').empty();
+
+                var len = data.length;
+
+                for(i=0;i<len; i++){
+
+                    //$('#quiz-container').append("<div class='col-xs-4'><span style='font-size: large;'><strong>"+data[i].word+"</strong></span><hr><span style='background: #ff0;'>"+data[i].def+"</span></div>");
+
+                    $('#quiz-container').append('<div class="card"><div class="card-header"><h3>'+data[i].word+'</h3></div><div class="card-body text-center"><p class="card-text">'+data[i].def+'</p></div><div class="card-footer"><div class="btn-group"><button type="button" class="btn-danger btn" onclick="rejSug(event, '+data[i].sugid+')">Wrong</button><button type="button" class="btn-success btn" onclick="appSug(event, '+data[i].sugid+')" >Correct</button></div></div></div>');
+
+                    // <button type='button' class='btn-primary btn-xs'>Share</button>
+                }
+
+            }
+        });
+
+    }
+
+
+    function appSug(e, sugid) {
+
+        e.preventDefault();
+
+        var userid = getCookie("userid");
+        // console.log(query);
+
+        $.ajax({
+            type: "GET",
+            url: "http://192.168.43.128/spaceapps/eapi/api.php",
+            data: { command: "appSug", userid: userid, sugid: sugid}
+        }).done(function(result) {
+
+            console.log(result);
+
+            var res = JSON.parse(result);
+            console.log(res);
+            if(res.status - 2 + 1 + 1 == 0){
+                $('#quiz-container').empty();
+                fetchCards();
+            }
+        });
+
+    }
+
+    function rejSug(e, sugid) {
+
+        e.preventDefault();
+
+        var userid = getCookie("userid");
+        console.log(sugid);
+
+        $.ajax({
+            type: "GET",
+            url: "http://192.168.43.128/spaceapps/eapi/api.php",
+            data: { command: "rejSug", userid: userid, sugid: sugid}
+        }).done(function(result) {
+
+            console.log(result);
+
+            var res = JSON.parse(result);
+            console.log(res);
+            if(res.status - 2 + 1 + 1 == 0){
+                $('#quiz-container').empty();
+                fetchCards();
+            }
+        });
+
+    }
+
+    function outUser(e) {
+
+        e.preventDefault();
+
+        $.ajax({
+            type: "GET",
+            url: "http://192.168.43.128/spaceapps/eapi/api.php",
+            data: { command: "outUser" }
+        }).done(function(result) {
+
+            console.log(result);
+
+            var res = JSON.parse(result);
+            console.log(res);
+            if(res.status - 2 + 1 + 1 == 0){
+
+                window.location = "index.html";
+
+            }
+        });
+
+    }
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    </script>
+</body>
+
+</html>
