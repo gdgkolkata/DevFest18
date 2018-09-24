@@ -1,0 +1,181 @@
+
+/* ==========================================================================
+Header
+========================================================================== */
+
+
+body
+{
+margin-right:0;
+max-width:100%;
+overflow-x:hidden;}
+.main
+{
+width:100%;
+margin-left:0px;
+margin-top:-80px;
+right:0;}
+
+.event_title, .event_details
+{
+color:rgb(64,64,64);}
+
+.page-header
+{
+opacity:1;}
+
+.texter, .navbar-toggler-icon
+{
+color:rgb(74,74,74);}
+
+#joinbtn
+{
+  background-color: rgb(0,102,255);
+  margin:5px;
+}
+
+.logo
+{
+color:rgb(83,109,254);
+text-decoration:bold;
+font-family:Roboto;}
+
+#fb
+{
+padding-left:13px;
+padding-right:13px;}
+
+#pro
+{
+padding-left:11px;
+padding-right:11px;}
+
+
+
+    .main-raised{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+.navbar-toggler-icon{
+color:rgb(64,64,64);}
+
+#footie{
+color:rgb(64,64,64);
+
+font-size:20px;
+padding:5px;
+margin-left:10px;}
+#heart
+{
+color:rgb(250,36,5);
+padding:3px;}
+
+
+
+/* ==========================================================================
+Footer
+========================================================================== */
+.page-footer {
+	font-size:40px;
+  padding-top: 20px;
+  color: #fff;
+  background-color: rgb(210,210,210);
+}
+
+.page-footer li a i, .page-footer1 li a i{
+
+color:white;
+background-color:rgb(83,109,254);
+padding:10px;
+border-radius:50%;
+font-size:20px;
+box-shadow:0 6px 8px 1px rgba(0,0,0,.18);}
+
+
+.footer-container{
+width:100%;}
+
+.page-footer {
+font-size:40px;
+  padding-top: 20px;
+  color: #fff;
+  background-color: rgb(216,216,216);
+}
+
+/* ==========================================================================
+To top
+========================================================================== */
+
+#team_thumb
+{
+width:200px;
+height:200px;
+border: 4px solid white;
+border-radius:50%;
+margin-top:150px;
+margin-bottom:20px;
+}
+.to-top {
+  height: 60px;
+  background-color: #495061; }
+  .to-top .to-top-wrap {
+    height: 60px;
+    width: 70px;
+    position: absolute;
+    right: 0;
+    text-align: center; }
+    .to-top .to-top-wrap a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.15); }
+    .to-top .to-top-wrap a:hover, .to-top .to-top-wrap a:focus {
+      background-color: rgba(0, 0, 0, 0.4); }
+    .to-top .to-top-wrap i {
+      font-size: 30px;
+      line-height: 55px; }
+  .to-top .row {
+    position: relative; }
+
+
+
+
+
+
+/* ==========================================================================
+Other color edits
+========================================================================== */	
+	
+#buttons
+{
+background-color: rgb(52,109,241);
+border-radius:2px;
+}
+
+.texter1
+{
+color:white;
+background-color:rgb(0,102,255);
+padding:10px;
+font-size:14px;
+border-radius:3px;
+padding-right:18px;
+padding-left:18px;
+
+}
+
+#red_text
+{
+color:rgb(235,65,50);
+}
+#blue_text
+{
+color:rgb(0,102,255);}
+#green_text
+{
+color:rgb(252,189,0);}
+
+#orange_text
+{
+color:rgb(252,189,0);}
