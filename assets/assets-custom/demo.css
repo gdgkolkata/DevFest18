@@ -48,7 +48,7 @@ body {
     color: rgb(74, 74, 74);
 }
 
-.navbar-transparent .navbar-brand span, .navbar-transparent .navbar-brand span span{
+.navbar-transparent .logo, .navbar-transparent .logo span{
   /*display: none;*/
   color: transparent !important;
 }
@@ -63,6 +63,7 @@ body {
     font-family: Open Sans;
     font-weight: 500;
     font-size: x-large;
+    vertical-align: middle;
 }
 
 #fb {
