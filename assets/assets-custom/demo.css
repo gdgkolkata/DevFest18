@@ -63,7 +63,7 @@ body {
 }
 
 #footie {
-    color: rgb(64, 64, 64);
+    color: rgb(210,210,210);
     font-size: 20px;
     padding: 5px;
     margin-left: 10px;
@@ -80,7 +80,10 @@ body {
     padding: 0 !important;
 }
 
-
+#header-text
+{
+    cursor: pointer;
+}
 
 /* ==========================================================================
 Footer
@@ -90,7 +93,7 @@ Footer
     font-size: 40px;
     padding-top: 20px;
     color: #fff;
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(70, 70, 70);
 }
 
 .page-footer li a i,
@@ -110,10 +113,21 @@ Footer
 }
 
 .page-footer {
+    text-align:left;
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left:10%;
+    color: #fff;
+    background-color: rgb(70, 70, 70);
+}
+
+.page-footer1 {
+    text-align: left;
+    padding-left:10%;
     font-size: 40px;
     padding-top: 20px;
     color: #fff;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(50, 50, 50);
 }
 
 
