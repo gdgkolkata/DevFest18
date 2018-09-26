@@ -8,6 +8,25 @@ body {
     overflow-x: hidden;
 }
 
+.nomob{
+    display: none;
+}
+
+.nodesk{
+    display: inline-block;
+}
+
+@media (min-width: 600px) and (orientation:landscape) {
+
+    .nomob{
+        display: block;
+    }
+
+    .nodesk{
+        display: none;
+    }
+}
+
 .main {
     width: 100%;
     margin-left: 0px;
@@ -27,6 +46,11 @@ body {
 .texter,
 .navbar-toggler-icon {
     color: rgb(74, 74, 74);
+}
+
+.navbar-transparent .navbar-brand span, .navbar-transparent .navbar-brand span span{
+  /*display: none;*/
+  color: transparent !important;
 }
 
 #joinbtn {
@@ -83,6 +107,14 @@ body {
 #header-text
 {
     cursor: pointer;
+}
+
+#hometop-container{
+  text-align: center;
+
+     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 /* ==========================================================================
