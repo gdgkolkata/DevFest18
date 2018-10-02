@@ -42,6 +42,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 
 }
+.event_title_track{
+    padding:10px;
+    margin:5px;
+    font-size:26px;
+}
 
 .page-header {
     opacity: 1;
@@ -139,7 +144,7 @@ body {
 .icon
 {
     font-size:30px;
-    background:rgb(252, 189, 0);
+    background:rgb(247, 96, 184);
     color:white;
     padding:10px;
     border-radius:50px;
@@ -152,6 +157,17 @@ body {
 #mobile 
 {
     background: rgb(0, 102, 255);
+}
+
+#details_redirect
+{
+    font-size: 16px;
+    color:rgb(0, 102, 255);
+    transition: 0.3s ease;
+}
+
+#details_redirect:hover{
+    color:rgb(247, 96, 184);
 }
 
 /* ==========================================================================
@@ -251,8 +267,59 @@ To top
 
 
 
-
-
+/* ==========================================================================
+Photo Grid
+========================================================================== */
+#photos {
+    /* Prevent vertical gaps */
+    line-height: 0;
+    height:500px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+    -webkit-row-count: 5;
+    -webkit-row-gap:   0px;
+    -moz-row-count:    5;
+    -moz-row-gap:      0px;
+    column-count:         5;
+    column-gap:           0px;
+ }
+ 
+ #photos img {
+   /* Just in case there are inline attributes */
+   width: 100% !important;
+   height: auto !important;
+ }
+ 
+ @media (max-width: 1200px) {
+   #photos {
+   -moz-row-count:    4;
+   -webkit-row-count: 4;
+   grid-column:         4;
+   }
+ }
+ @media (max-width: 1000px) {
+   #photos {
+   -moz-row-count:    3;
+   -webkit-row-count: 3;
+   grid-column:         3;
+   }
+ }
+ @media (max-width: 800px) {
+   #photos {
+   -moz-row-count:    2;
+   -webkit-row-count: 2;
+   grid-column:         2;
+   }
+ }
+ @media (max-width: 400px) {
+   #photos {
+   -moz-row-count:    1;
+   -webkit-row-count: 1;
+   grid-column:         1;
+   }
+ }
+ 
 
 
 
