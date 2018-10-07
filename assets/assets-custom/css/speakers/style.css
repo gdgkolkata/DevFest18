@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .card {
     min-height: 500px;
     background: #fff;
