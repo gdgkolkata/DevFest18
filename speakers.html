@@ -161,25 +161,34 @@
     <script src="assets/assets-custom/js/main.js"></script>
     <script>
         $('document').ready(function(){
-
+            function getLinks(links){
+                var result = '';
+                links.forEach(function(link){
+                    if(link.linkType === 'Twitter'){
+                        result += '<li><a href="'+ link.url +'" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>';
+                    }
+                    if(link.linkType == 'LinkedIn'){
+                        result += '<li><a href="'+ link.url +'" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
+                    }
+                    if(link.linkType == 'Blog'){
+                        result += '<li><a href="'+ link.url +'" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></li>';
+                    }
+                });
+                return result;
+            }
             function getTemplate(speaker){
             var template =
                 '                                                                                                                                               \
                 <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 parent-card">                                                                                  \
-                    <div class="card">                                                                                                                          \
+                    <div class="card" data-id="'+ speaker.id +'">                                                                                                                          \
                         <div class="box">                                                                                                                       \
                             <div class="img">                                                                                                                   \
-                                <img src="'+ speaker.displayPicture +'" alt="">                                                                                 \
+                                <img src="'+ speaker.profilePicture +'" alt="">                                                                                 \
                             </div>                                                                                                                              \
-                            <h2>'+ speaker.name +'<br><span>'+ speaker.tagline +'</span></h2>                                                                   \
-                            <p>' + speaker.biography +'</p>                                                                                                     \
-                            <span>                                                                                                                              \
-                                <ul>                                                                                                                            \
-                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>                                                  \
-                                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>                                                   \
-                                    <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>                                               \
-                                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>                                                  \
-                                </ul>                                                                                                                           \
+                            <h2>'+ speaker.fullName +'<br></h2>                                                                                                 \
+                            <p>' + speaker.bio.split('.')[0] +'.</p>                                                                                            \
+                            <span class="speaker-social">                                                                                                       \
+                                <ul>' + getLinks(speaker.links) +'</ul>                                                                                         \
                             </span>                                                                                                                             \
                         </div>                                                                                                                                  \
                     </div>                                                                                                                                      \
@@ -189,8 +198,8 @@
             }
             
             var html = '';
-            $.getJSON('speakers.json', function(speakers){
-                speakers.forEach(speaker => {
+            $.getJSON('https://sessionize.com/api/v2/2uq21o2i/view/speakers', function(speakers){
+                speakers.forEach(function(speaker){
                     html += getTemplate(speaker);
                 });
                 $('#container-speakers').append(html);
