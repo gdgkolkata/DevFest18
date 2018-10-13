@@ -23,6 +23,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+
     <!-- iframe removal -->
 </head>
 
@@ -82,12 +83,14 @@
     <div class="container-page">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"><p>&nbsp;</p>
                     <h1>Speakers</h1>
-                    <p>Hear from the Googlers, Partners, and Guest Speakers who are building the future of cloud. Check
+                    <h4 class="description">Hear from the Googlers, Partners, and Guest Speakers who are building the future of Mobile and Cloud.</h4>
+                    <h4 class="description">Check
                         back often
-                        as we add more speakers, including our customers and partners.</p>
+                        as we add more speakers, including our customers and partners.</h4>
                 </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12"><p>&nbsp;</p><img class="img-fluid" src="assets/img/kit/speaker_banner.png"/></div>
             </div>
         </div>
         <hr class="custom-horizontal-rule" />
@@ -97,6 +100,15 @@
             </div>
         </div>
     </div>
+    <section class="to-top">
+        <div class="container">
+            <div class="row">
+                <div class="to-top-wrap">
+                    <a href="#top" class="top"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="page-footer">
         <div class="footer-container">
             <div class="row">
@@ -122,28 +134,19 @@
                     <h5 class="white-text"></h5>
                     <ul>
                         <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/shuvam360"
-                                target="_blank" data-original-title="Follow me on Twitter">
-                                <i class="fa fa-twitter"></i>
-                            </a>
+                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/gdgkolkata?s=09" target="_blank" data-original-title="Follow us on Twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/shuvam.manna.3"
-                                target="_blank" data-original-title="Join me on Facebook">
-                                <i class="fa fa-facebook" id="fb"></i>
-                            </a>
+                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/GDGKolkata/" target="_blank" data-original-title="Join us on Facebook">
+                            <i class="fa fa-facebook" id="fb"></i>
+                        </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://plus.google.com/+ShuvamManna"
-                                target="_blank" data-original-title="Circle up on G+">
-                                <i class="fa fa-google"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.linkedin.com/in/shuvam-manna-a70637148/"
-                                target="_blank" data-original-title="Add me on LinkedIn">
-                                <i class="fa fa-linkedin" id="pro"></i>
-                            </a>
+                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.meetup.com/GDG-Kolkata/" target="_blank" data-original-title="Keep Track at Meetup">
+                            <i class="fa fa-meetup"></i>
+                        </a>
                         </li>
                     </ul>
                 </div>
@@ -165,13 +168,13 @@
                 var result = '';
                 links.forEach(function(link){
                     if(link.linkType === 'Twitter'){
-                        result += '<li><a href="'+ link.url +'" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>';
+                        result += '<li style="color:rgb(0,101,202);"><a id="social_link1" href="'+ link.url +'" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>';
                     }
                     if(link.linkType == 'LinkedIn'){
-                        result += '<li><a href="'+ link.url +'" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
+                        result += '<li style="color:rgb(0,101,202);"><a id="social_link1" href="'+ link.url +'" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>';
                     }
                     if(link.linkType == 'Blog'){
-                        result += '<li><a href="'+ link.url +'" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></li>';
+                        result += '<li style="color:rgb(0,101,202);"><a id="social_link1" href="'+ link.url +'" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a></li>';
                     }
                 });
                 return result;
@@ -185,8 +188,8 @@
                             <div class="img">                                                                                                                   \
                                 <img src="'+ speaker.profilePicture +'" alt="">                                                                                 \
                             </div>                                                                                                                              \
-                            <h2>'+ speaker.fullName +'<br></h2>                                                                                                 \
-                            <p>' + speaker.bio.split('.')[0] +'.</p>                                                                                            \
+                            <h2 style="font-weight:400;">'+ speaker.fullName +'<br></h2>                                                                                                 \
+                            <p class="description">' + speaker.bio.split('.')[0] +'.</p>                                                                                            \
                             <span class="speaker-social">                                                                                                       \
                                 <ul>' + getLinks(speaker.links) +'</ul>                                                                                         \
                             </span>                                                                                                                             \
