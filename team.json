@@ -1,98 +1,113 @@
 [
     {
-        "displayPicture":"https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/adrian_kajda.jpg",
-        "name":"John Doe",
-        "city":"Kyiv",
-        "State":"Ukraine",
-        "tagline":"Senior Android Developer, Stanfy",
-        "biography":"Senior Android developer, currently works at Stanfy. Have experience in both server and mobile side development. All my free time I spend on the endless search of silver bullets, perfect architectures and holy wars.",
-        "twitter":"johndoe",
-        "facebook":"johndoe",
-        "linkedin":"johndoe",
-        "googlePlus":"johndoe"
+        "displayPicture":"https://sessionize.com/image?f=fd31d66d66d823a37ee37596ab8426c7,400,400,True,False,a72ed7ee-704c-453a-9d4e-ca5014ed0e5a.jpg",
+        "name":"Rivu Ganguly",
+        "description":"Social Media Head",
+        "links":[
+            {
+                "linkType": "Blog",
+                "link": "https://example.com"
+            },
+            {
+                "linkType": "Twitter",
+                "link": "https://twitter.com"
+            },
+            {
+                "linkType": "Facebook",
+                "link": "https://facebook.com"
+            }
+        ]
     },
     {
-        "displayPicture":"https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/adrian_kajda.jpg",
-        "name":"John Doe",
-        "city":"Kyiv",
-        "State":"Ukraine",
-        "tagline":"Senior Android Developer, Stanfy",
-        "biography":"Senior Android developer, currently works at Stanfy. Have experience in both server and mobile side development. All my free time I spend on the endless search of silver bullets, perfect architectures and holy wars.",
-        "twitter":"johndoe",
-        "facebook":"johndoe",
-        "linkedin":"johndoe",
-        "googlePlus":"johndoe"
+        "displayPicture":"https://sessionize.com/image?f=fd31d66d66d823a37ee37596ab8426c7,400,400,True,False,a72ed7ee-704c-453a-9d4e-ca5014ed0e5a.jpg",
+        "name":"Rivu Ganguly",
+        "description":"Social Media Head",
+        "links":[
+            {
+                "linkType": "Blog",
+                "link": "https://example.com"
+            },
+            {
+                "linkType": "Twitter",
+                "link": "https://twitter.com"
+            },
+            {
+                "linkType": "Facebook",
+                "link": "https://facebook.com"
+            },
+            {
+                "linkType": "LinkedIn",
+                "link": "https://linkedin.com"
+            }
+        ]
     },
     {
-        "displayPicture":"https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/adrian_kajda.jpg",
-        "name":"John Doe",
-        "city":"Kyiv",
-        "State":"Ukraine",
-        "tagline":"Senior Android Developer, Stanfy",
-        "biography":"Senior Android developer, currently works at Stanfy. Have experience in both server and mobile side development. All my free time I spend on the endless search of silver bullets, perfect architectures and holy wars.",
-        "twitter":"johndoe",
-        "facebook":"johndoe",
-        "linkedin":"johndoe",
-        "googlePlus":"johndoe"
+        "displayPicture":"https://sessionize.com/image?f=fd31d66d66d823a37ee37596ab8426c7,400,400,True,False,a72ed7ee-704c-453a-9d4e-ca5014ed0e5a.jpg",
+        "name":"Rivu Ganguly",
+        "description":"Social Media Head",
+        "links":[
+            {
+                "linkType": "Blog",
+                "link": "https://example.com"
+            },
+            {
+                "linkType": "Twitter",
+                "link": "https://twitter.com"
+            },
+            {
+                "linkType": "Facebook",
+                "link": "https://facebook.com"
+            },
+            {
+                "linkType": "LinkedIn",
+                "link": "https://linkedin.com"
+            }
+        ]
     },
     {
-        "displayPicture":"https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/adrian_kajda.jpg",
-        "name":"John Doe",
-        "city":"Kyiv",
-        "State":"Ukraine",
-        "tagline":"Senior Android Developer, Stanfy",
-        "biography":"Senior Android developer, currently works at Stanfy. Have experience in both server and mobile side development. All my free time I spend on the endless search of silver bullets, perfect architectures and holy wars.",
-        "twitter":"johndoe",
-        "facebook":"johndoe",
-        "linkedin":"johndoe",
-        "googlePlus":"johndoe"
+        "displayPicture":"https://sessionize.com/image?f=fd31d66d66d823a37ee37596ab8426c7,400,400,True,False,a72ed7ee-704c-453a-9d4e-ca5014ed0e5a.jpg",
+        "name":"Rivu Ganguly",
+        "description":"Social Media Head",
+        "links":[
+            {
+                "linkType": "Blog",
+                "link": "https://example.com"
+            },
+            {
+                "linkType": "Twitter",
+                "link": "https://twitter.com"
+            },
+            {
+                "linkType": "Facebook",
+                "link": "https://facebook.com"
+            },
+            {
+                "linkType": "LinkedIn",
+                "link": "https://linkedin.com"
+            }
+        ]
     },
     {
-        "displayPicture":"https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/adrian_kajda.jpg",
-        "name":"John Doe",
-        "city":"Kyiv",
-        "State":"Ukraine",
-        "tagline":"Senior Android Developer, Stanfy",
-        "biography":"Senior Android developer, currently works at Stanfy. Have experience in both server and mobile side development. All my free time I spend on the endless search of silver bullets, perfect architectures and holy wars.",
-        "twitter":"johndoe",
-        "facebook":"johndoe",
-        "linkedin":"johndoe",
-        "googlePlus":"johndoe"
-    },
-    {
-        "displayPicture":"https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/adrian_kajda.jpg",
-        "name":"John Doe",
-        "city":"Kyiv",
-        "State":"Ukraine",
-        "tagline":"Senior Android Developer, Stanfy",
-        "biography":"Senior Android developer, currently works at Stanfy. Have experience in both server and mobile side development. All my free time I spend on the endless search of silver bullets, perfect architectures and holy wars.",
-        "twitter":"johndoe",
-        "facebook":"johndoe",
-        "linkedin":"johndoe",
-        "googlePlus":"johndoe"
-    },
-    {
-        "displayPicture":"https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/adrian_kajda.jpg",
-        "name":"John Doe",
-        "city":"Kyiv",
-        "State":"Ukraine",
-        "tagline":"Senior Android Developer, Stanfy",
-        "biography":"Senior Android developer, currently works at Stanfy. Have experience in both server and mobile side development. All my free time I spend on the endless search of silver bullets, perfect architectures and holy wars.",
-        "twitter":"johndoe",
-        "facebook":"johndoe",
-        "linkedin":"johndoe",
-        "googlePlus":"johndoe"
-    },
-    {
-        "displayPicture":"https://storage.googleapis.com/hoverboard-experimental.appspot.com/images/people/optim/adrian_kajda.jpg",
-        "name":"John Doe",
-        "city":"Kyiv",
-        "State":"Ukraine",
-        "tagline":"Senior Android Developer, Stanfy",
-        "biography":"Senior Android developer, currently works at Stanfy. Have experience in both server and mobile side development. All my free time I spend on the endless search of silver bullets, perfect architectures and holy wars.",
-        "twitter":"johndoe",
-        "facebook":"johndoe",
-        "linkedin":"johndoe",
-        "googlePlus":"johndoe"
+        "displayPicture":"https://sessionize.com/image?f=fd31d66d66d823a37ee37596ab8426c7,400,400,True,False,a72ed7ee-704c-453a-9d4e-ca5014ed0e5a.jpg",
+        "name":"Rivu Ganguly",
+        "description":"Social Media Head",
+        "links":[
+            {
+                "linkType": "Blog",
+                "link": "https://example.com"
+            },
+            {
+                "linkType": "Twitter",
+                "link": "https://twitter.com"
+            },
+            {
+                "linkType": "Facebook",
+                "link": "https://facebook.com"
+            },
+            {
+                "linkType": "LinkedIn",
+                "link": "https://linkedin.com"
+            }
+        ]
     }
 ]
