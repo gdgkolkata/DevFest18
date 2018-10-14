@@ -7,8 +7,11 @@ Header
     color:rgb(52, 109, 241);
 }
 
-.col-xs-2{
-  
+.col-lg-2{
+  padding:10px;
+}
+.col-lg-2 img{
+   
 }
 .col-half-offset{
     margin-left:4.166666667%
