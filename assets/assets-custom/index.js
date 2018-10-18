@@ -12,3 +12,9 @@ for (var i = 0; i < 105; i++) {
 }
 
 $('#photos').append(allImages);
+
+// $('.grid').packery({
+//   // options
+//   itemSelector: '.grid-item',
+//   gutter: 10
+// });

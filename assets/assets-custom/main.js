@@ -3,4 +3,5 @@ $(document).ready(function(){
 	// 	event.preventDefault();
 	// 	event.returnValue = false;
 	// });
+	$('#photogrid').GridHorizontal();
 });
