@@ -8,10 +8,35 @@
     margin: 0px;
 }
 
-.image-grid .row .col-lg-4 img{
-    transition: 0.3s;
+.image-grid .row .col-lg-4 img {
+    filter: gray;
+    -webkit-filter: grayscale(1);
 }
 
-.image-grid .row .col-lg-4 img:hover{
-    transform: scale(1.01);
+.image-grid .row .col-lg-4 img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.image-grid .hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.image-grid .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all .4s linear;
+    transition: all .4s linear;
+}
+
+.image-grid .hovereffect:hover img {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
