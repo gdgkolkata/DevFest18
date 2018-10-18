@@ -1,0 +1,9 @@
+.image-grid {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.image-grid .row .col-lg-4 {
+    padding: 3px;
+    margin: 0px;
+}
