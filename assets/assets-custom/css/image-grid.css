@@ -8,16 +8,6 @@
     margin: 0px;
 }
 
-.image-grid .row .col-lg-4 img {
-    filter: gray;
-    -webkit-filter: grayscale(1);
-}
-
-.image-grid .row .col-lg-4 img:hover {
-    filter: none;
-    -webkit-filter: grayscale(0);
-}
-
 .image-grid .hovereffect {
     width: 100%;
     height: 100%;
@@ -31,11 +21,15 @@
 .image-grid .hovereffect img {
     display: block;
     position: relative;
-    -webkit-transition: all .4s linear;
-    transition: all .4s linear;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    transition-duration: 10s;
+    transition-timing-function: cubic-bezier(0,0.1,0,1);
 }
 
 .image-grid .hovereffect:hover img {
+    filter: none;
+    -webkit-filter: grayscale(0);
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
