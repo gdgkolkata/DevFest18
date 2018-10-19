@@ -7,7 +7,7 @@ jobs:
   build:
     machine: true
 
-    working_directory: ~/DevFest18
+    working_directory: ~/
 
     steps:
       - checkout
@@ -15,3 +15,8 @@ jobs:
       - run: curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
       - run: sudo dpkg -i cf-cli_amd64.deb
       - run: cf -v
+      - run: cf api https://api.ng.bluemix.net
+      - run: cf auth $BLUEMIX_USER $BLUEMIX_PASSWORD
+      - run: cf target -o $BLUEMIX_ORG -s $BLUEMIX_SPACE
+      - run: cf a
+      - run: cf push
