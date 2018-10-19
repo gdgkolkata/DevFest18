@@ -56,7 +56,7 @@ $(document).ready(function(){
 		{
 			"name": "Prajyot Mainkar",
 			"cover": "default",
-			"pic": "https://www.facebook.com/photo/download/?fbid=10153150619877215&ext=1540162452&hash=AeTxHCxpGxY2aCg2",
+			"pic": "https://github.com/xprilion/random-storage/raw/master/images/prajyot_mainkar.jpg",
 			"desc": "description",
 			"fb": "fb",
 			"twitter": "twitter"
