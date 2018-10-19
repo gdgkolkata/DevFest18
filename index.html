@@ -17,14 +17,67 @@
     <link rel="stylesheet" href="assets/css/material-kit.css?v=2.0.2">
     <!-- Documentation extras -->
     <link href="assets/assets-custom/demo.css" rel="stylesheet" />
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="assets/assets-custom/css/image-grid.css" rel="stylesheet" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .card-profile {
+          max-width: 320px;
+          margin: 20px auto;
+          background-color: #e6e5e1;
+          border-radius: 0;
+          border: 0;
+          box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
+        }
+        .card-profile .card-img-top {
+          border-radius: 0;
+        }
+        .card-profile .card-img-profile {
+          max-width: 100%;
+          border-radius: 50%;
+          margin-top: -95px;
+          margin-bottom: 35px;
+          border: 5px solid #e6e5e1;
+        }
+        .card-profile .card-title {
+          margin-bottom: 50px;
+        }
+        .card-profile .card-title small {
+          display: block;
+          font-size: .6em;
+          margin-top: .2em;
+        }
+        .card-profile .card-links {
+          margin-bottom: 25px;
+        }
+        .card-profile .card-links .fa {
+          margin: 0 1em;
+          font-size: 1.6em;
+        }
+        .card-profile .card-links .fa:focus, .card-profile .card-links .fa:hover {
+          text-decoration: none;
+        }
+        .card-profile .card-links .fa.fa-twitter {
+          color: #68aade;
+        }
+        .card-profile .card-links .fa.fa-twitter:hover {
+          color: #3e92d5;
+        }
+        .card-profile .card-links .fa.fa-facebook {
+          color: #3b5999;
+        }
+        .card-profile .card-links .fa.fa-facebook:hover {
+          color: #2d4474;
+        }
+/*
+        .grid-item { width: 25%; }
+        .grid-item--width2 { width: 50%; }*/
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+        </style>
     <!-- iframe removal -->
 </head>
 
@@ -32,7 +85,8 @@
     <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
         <div class="container">
             <div class="navbar-translate">
-                <a class="navbar-brand"><span id="gdg-logo"><img src="assets/img/kit/gdg-logo-t.png" style="max-height: 90%;" /></span>&nbsp;&nbsp;<span class="logo"><b>DevFest<span id="orange_text">18</span></b></span> </a>
+                <a class="navbar-brand"><span id="gdg-logo"><img src="assets/img/kit/gdg-logo-t.png" style="max-height: 90%;" /></span>&nbsp;&nbsp;<span
+                        class="logo"><b>DevFest<span id="orange_text">18</span></b></span> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     <span class="navbar-toggler-icon"></span>
@@ -43,22 +97,22 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="dropdown nav-item">
                         <a href="#" data-page="index" class="nav-link">
-                             <span ><b>Home</b></span>
+                            <span><b>Home</b></span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="./speakers" data-page="speakers" class="nav-link">
-                             <span ><b id="header_text">Speakers</b></span>
+                            <span><b id="header_text">Speakers</b></span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="./schedule" data-page="schedule" class="nav-link">
-                             <span ><b id="header_text">Schedule</b></span>
+                            <span><b id="header_text">Schedule</b></span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="./team" data-page="team" class="nav-link">
-                             <span ><b id="header_text">Team</b></span>
+                            <span><b id="header_text">Team</b></span>
                         </a>
                     </li>
                     <!-- <li class="nav-item">
@@ -66,14 +120,14 @@
                              <span ><b id="header_text">Blog</b></span>
                         </a>
                     </li> -->
-                    <li class="nav-item">
+                    <!--  <li class="nav-item">
                         <a href="./about" data-page="about" class="nav-link">
                              <span ><b id="header_text">About</b></span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a target="blank" class="nav-link" href="https://www.meetup.com/GDG-Kolkata/events/255454280/">
-                             <span  class="btn" id="joinbtn"><b id="header_text">Register</b></span>
+                            <span class="btn" id="joinbtn"><b id="header_text">Register</b></span>
                         </a>
                     </li>
                 </ul>
@@ -84,15 +138,15 @@
         <div class="container" style="width: 100vw; padding: 0; margin: 0; max-width: 100vw;">
             <div class="row" style="height: 100vh;">
                 <div class="col-md-4" id="hometop-container">
-
                 </div>
-                <div class="col-md-4" >&nbsp;</div>
+                <div class="col-md-4">&nbsp;</div>
                 <div class="col-md-4" id="hometop-container">
                     <h1 class="event_title">DevFest 2018</h1>
                     <h4 class="event_details">University of Engineering and Management Kolkata</h4>
                     <h4 class="event_details">3rd November</h4>
-                    <a target="_blank" id="buttons" class="btn btn-primary" href="https://www.meetup.com/GDG-Kolkata/events/255454280/">Add the event</a>
-                    <br/>
+                    <a target="_blank" id="buttons" class="btn btn-primary" href="https://www.meetup.com/GDG-Kolkata/events/255454280/">Add
+                        the event</a>
+                    <br />
                 </div>
                 <div class="col-md-8" style=" background-image: url('assets/img/kit/__banner.png'); background-position: bottom; background-size: 100% auto;">&nbsp;</div>
             </div>
@@ -104,48 +158,54 @@
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto">
                         <h2 class="title">GDG Devfest 2018</h2>
-                        <h5 class="description">GDG DevFest Kolkata is Developer Festival that brings together the world class experts in Android, Web and Cloud technologies to the City of Joy for a day full of sessions, workshops and showcases.</h5>
-                        <h4 class="description">The 2018 Edition will be held in University of Engineering and Management, Kolkata.</h4>
+                        <h5 class="description">GDG DevFest Kolkata is Developer Festival that brings together the
+                            world class experts in Android, Web and Cloud technologies to the City of Joy for a day
+                            full of sessions, workshops and showcases.</h5>
+                        <h4 class="description">The 2018 Edition will be held in University of Engineering and
+                            Management, Kolkata.</h4>
                     </div>
                 </div>
                 <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
                     <!--First column-->
                     <div class="col-lg-6">
-                       <!--Card-->
-                       <h2 class="title" id="tracks"><b>Tracks</b></h2><p>&nbsp;</p>
-                       <span id="mobile" class="icon"><i class="material-icons">
-                        android
-                        </i></span><span class="event_title_track" style="color:rgb(120,120,120);">Mobile</span>
-                       <!--Card-->
-                       <p>&nbsp;</p>
-                       <h5 class="description">Explore and Learn about the latest trends, technologies and best practices in Mobile Development. Learn from the Workshops and Hands-On sessions from experts in Kotlin, Flutter, JetPack and other latest Mobile Technologies.</h5>
-
-                       <!--/.Card-->
+                        <!--Card-->
+                        <h2 class="title" id="tracks"><b>Tracks</b></h2>
+                        <p>&nbsp;</p>
+                        <span id="mobile" class="icon"><i class="material-icons">
+                                android
+                            </i></span><span class="event_title_track" style="color:rgb(120,120,120);">Mobile</span>
+                        <!--Card-->
+                        <p>&nbsp;</p>
+                        <h5 class="description">Explore and Learn about the latest trends, technologies and best
+                            practices in Mobile Development. Learn from the Workshops and Hands-On sessions from
+                            experts in Kotlin, Flutter, JetPack and other latest Mobile Technologies.</h5>
+                        <!--/.Card-->
                     </div>
                     <!--/.First column-->
                     <!--Second column-->
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
                         <!--Card-->
-                        <h3 class="title" id="tracks"><b>&nbsp;</b></h3><p>&nbsp;</p>
-                            <span class="icon cloud"><i class="material-icons">
+                        <h3 class="title" id="tracks"><b>&nbsp;</b></h3>
+                        <p>&nbsp;</p>
+                        <span class="icon cloud"><i class="material-icons">
                                 cloud
-                                </i></span><span class="event_title_track" style="color:rgb(120,120,120);">Cloud</span>
+                            </i></span><span class="event_title_track" style="color:rgb(120,120,120);">Cloud</span>
                         <!--Card-->
                         <p>&nbsp;</p>
-                        <h5 class="description">Besides the kind that brings in rain, Computation as a whole has undergone a paradigm shift by the migration of tools and resources to the Cloud. Explore Machine Learning and AI in Cloud, Firebase, Building for the Google Assistant and a lot more from our Experts.</h5>
-
+                        <h5 class="description">Besides the kind that brings in rain, Computation as a whole has
+                            undergone a paradigm shift by the migration of tools and resources to the Cloud. Explore
+                            Machine Learning and AI in Cloud, Firebase, Building for the Google Assistant and a lot
+                            more from our Experts.</h5>
                         <!--/.Card-->
                     </div>
                     <!--/.Second column-->
                 </div>
                 <!--/.First row-->
-
                 <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
-
-                     <!--First column-->
-                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+                    <!--First column-->
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
                         <!--Card-->
-                        <img class="img-fluid" src="assets/img/kit/event.jpg" width="95%" height="95%" />
+                        <img class="img-fluid" src="assets/img/kit/event.JPG" width="95%" height="95%" />
                         <!--/.Card-->
                     </div>
                     <!--/.First column-->
@@ -155,114 +215,214 @@
                         <h2 class="title" id="internship_fair"><b>Get Involved</b></h2>
                         <h3 class="event_title" style="color:rgb(150,150,150);">Attend Devfest 2018 Kolkata</h3>
                         <!--Card-->
-                        <h5 class="description">Each DevFest is inspired by and uniquely tailored to the needs of the developer community that hosts it.
+                        <h5 class="description">Each DevFest is inspired by and uniquely tailored to the needs of the
+                            developer community that hosts it.
 
-                            While no two events will be exactly alike, each event will, at its core, be powered by a shared belief that when developers come together to exchange ideas, amazing things can happen.</h5>
+                            While no two events will be exactly alike, each event will, at its core, be powered by a
+                            shared belief that when developers come together to exchange ideas, amazing things can
+                            happen.</h5>
                         <a href="http://meetu.ps/e/FWMKj/Bg8Th/f" class="btn btn-primary" id="buttons">Register</a>
                     </div>
                     <!--/.Second column-->
-
                 </div>
                 <!--/.First row-->
                 <p>&nbsp;</p>
                 <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s">
+                    <div class="col-lg-6" style="text-align:left;">
+                        <h2 class="title" id="campus_ambassador"><b>Rockstar Speakers</b></h2>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-lg-6" style="text-align:left;"></div>
+                    <!-- <div id="rockstar_details"> -->
+                    <div class="col-lg-3" style="text-align:left;">
+                        <div class='card card-profile text-center'>
+                            <img alt='' class='card-img-top'  id="speaker-1-cover" src='https://unsplash.it/340/160?image=354'>
+                            <div class='card-block'>
+                                <img alt=''  id="speaker-1-pic" class='card-img-profile' src='https://afcm.ca/wp-content/uploads/2018/06/no-photo.png'
+                                    height="160px">
+                                <h4 class='card-title' id="speaker-1-name">
+                                    John Doe
+                                    <small>Developer</small>
+                                </h4>
+                                <div class='card-links' id="speaker-1-links">
+                                    <!-- <a class='fa fa-twitter' href='#' id=""></a>
+                                    <a class='fa fa-facebook' href='#'></a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" style="text-align:left;">
+                        <div class='card card-profile text-center'>
+                            <img alt=''  id="speaker-2-cover" class='card-img-top' src='https://unsplash.it/340/160?image=354'>
+                            <div class='card-block'>
+                                <img alt=''  id="speaker-2-pic" class='card-img-profile' src='https://afcm.ca/wp-content/uploads/2018/06/no-photo.png'
+                                    height="160px">
+                                <h4 class='card-title' id="speaker-2-name">
+                                    John Doe
+                                    <small>Developer</small>
+                                </h4>
+                                <div class='card-links' id="speaker-2-links">
 
-                        <div class="col-lg-6" style="text-align:left;"><h2 class="title" id="campus_ambassador"><b>Rockstar Speakers</b></h2>
-                            <p>&nbsp;</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" style="text-align:left;">
+                        <div class='card card-profile text-center'>
+                            <img alt='' id="speaker-3-cover" class='card-img-top' src='https://unsplash.it/340/160?image=354'>
+                            <div class='card-block'>
+                                <img alt='' id="speaker-3-pic" class='card-img-profile' src='https://afcm.ca/wp-content/uploads/2018/06/no-photo.png'
+                                    height="160px">
+                                <h4 class='card-title' id="speaker-3-name">
+                                    John Doe
+                                    <small>Developer</small>
+                                </h4>
+                                <div class='card-links' id="speaker-3-links">
 
-                            <div class="col-lg-6" style="text-align:left;"></div>
-                            <div class="col-lg-6" style="text-align:left;">:orem Ipsum</div>
-                            <div class="col-lg-6" style="text-align:left;">Lorem Ipsum</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3" style="text-align:left;">
+                        <div class='card card-profile text-center'>
+                            <img alt='' id="speaker-4-cover" class='card-img-top' src='https://unsplash.it/340/160?image=354'>
+                            <div class='card-block'>
+                                <img alt='' id="speaker-4-pic" class='card-img-profile' src='https://afcm.ca/wp-content/uploads/2018/06/no-photo.png' height="160px">
+                                <h4 class='card-title' id="speaker-4-name">
+                                    John Doe
+                                    <small>Developer</small>
+                                </h4>
+                                <div class='card-links' id="speaker-4-links">
 
-                            <div class="col-lg-6" style="text-align:left;"><p>&nbsp;</p>
-                                <a href="./speakers"><span class="description" id="details_redirect">See All Speakers &nbsp;&nbsp;<i class="material-icons">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+                    <div class="col-lg-6" style="text-align:left;">
+                        <p>&nbsp;</p>
+                        <a href="./speakers"><span class="description" id="details_redirect">See All Speakers
+                                &nbsp;&nbsp;<i class="material-icons">
                                     arrow_forward
-                                    </i></span></a></div>
-
-
+                                </i></span></a>
+                    </div>
                 </div>
                 <!--/.First row-->
-
                 <p>&nbsp;</p>
-                
-
-
-
-               
-                
-
-
-
                 <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s">
                     <!--First column-->
                     <div class="col-lg-6" style="text-align:left;">
                         <h2 class="title" id="campus_ambassador"><b>The Team</b></h2>
                         <!--Card-->
                         <h5 class="description">GDG Kolkata is the Proud Organizer of Devfest Kolkata.</h5>
-
-                                <a href="./team"><span class="description" id="details_redirect">Open Team Page &nbsp;&nbsp;<i class="material-icons">
+                        <a href="./team"><span class="description" id="details_redirect">Open Team Page &nbsp;&nbsp;<i
+                                    class="material-icons">
                                     arrow_forward
-                                    </i></span></a>
-                                    <p>&nbsp;</p>
-
-                                    <h4 class="title" id="campus_ambassador"><b>What is GDG?</b></h4>
-                        <h5 class="description">Google Developers Group (GDG) - is open and volunteer geek community who create exciting projects and share experience about Google technologies with a passion.</h5>
-                        <a href="https://developers.google.com/"><span class="description" id="details_redirect">Read More &nbsp;&nbsp;<i class="material-icons">
-                                arrow_forward
                                 </i></span></a>
-                                <p>&nbsp;</p>
-
-                </div>
+                        <p>&nbsp;</p>
+                        <h4 class="title" id="campus_ambassador"><b>What is GDG?</b></h4>
+                        <h5 class="description">Google Developers Group (GDG) - is open and volunteer geek community
+                            who create exciting projects and share experience about Google technologies with a passion.</h5>
+                        <a href="https://developers.google.com/"><span class="description" id="details_redirect">Read
+                                More &nbsp;&nbsp;<i class="material-icons">
+                                    arrow_forward
+                                </i></span></a>
+                        <p>&nbsp;</p>
+                    </div>
                     <!--/.First column-->
-
                     <!--Second column-->
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
-
                         <!--Card-->
-                        <img class="img-fluid" src="assets/img/kit/team.jpg" width="95%" height="95%"/>                    <!--/.Card-->
-
+                        <img class="img-fluid" src="assets/img/kit/team.JPG" width="95%" height="95%" />
+                        <!--/.Card-->
                     </div>
                     <!--/.Second column-->
                 </div>
                 <!--/.First row-->
+                <div class="image-grid">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img src="assets/img/photo_grid/7.JPG" class="img-responsive" style="width: 100%; height: auto;" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="hovereffect">
 
-
-
+                                <img src="assets/img/photo_grid/2.JPG" class="img-responsive" style="width: 100%; height: auto;" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img src="assets/img/photo_grid/3.JPG" class="img-responsive" style="width: 100%; height: auto;" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img src="assets/img/photo_grid/8.JPG" class="img-responsive" style="width: 100%; height: auto;" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img src="assets/img/photo_grid/5.JPG" class="img-responsive" style="width: 100%; height: auto;" />
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                            <div class="hovereffect">
+                                <img src="assets/img/photo_grid/6.JPG" class="img-responsive" style="width: 100%; height: auto;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <p>&nbsp;</p>
                 <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s">
-
-                        <div class="col-lg-6" style="text-align:left;"><h2 class="title" id="campus_ambassador"><b>Partners</b></h2>
-                            <p>&nbsp;</p></div>
-
-                            <div class="col-lg-6" style="text-align:left;"></div>
-                            
-                            <div class="container">
-                                
-                                <div class="row">
-                                    <div class="col-lg-2" id="p1"><p><h4 class="description" style="font-weight:600; color:rgb(90,90,90);">Principal Partner</h4></p><img class="img-fluid" src="assets/img/logos/gd.png"/></div>
-                                    <div class="col-lg-2 col-half-offset" id="p2"><h4 class="description"  style="font-weight:600; color:rgb(90,90,90);">Venue Partner</h4></p><img class="img-fluid" src="assets/img/logos/uem.png"/></div>
-                                    <div class="col-lg-2 col-half-offset" id="p3"><p><h4 class="description" style="color:white;">Hello</h4></p><img class="img-fluid" src="assets/img/logos/iem.png"/></div>
-                                    <div class="col-lg-2 col-half-offset" id="p4"><p><h4 class="description"  style="font-weight:600; color:rgb(90,90,90);">Brought To You By</h4></p><img class="img-fluid" src="assets/img/logos/gdg.png"/></div>
-                                    <div class="col-lg-2 col-half-offset" id="p5"><p><h4 class="description" style="color:white;">Hello</h4></p><img class="img-fluid" src="assets/img/logos/wtm.png"/></div>
-                                    
-                                </div>
+                    <div class="col-lg-6" style="text-align:left;">
+                        <h2 class="title" id="campus_ambassador"><b>Partners</b></h2>
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-lg-6" style="text-align:left;"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-2" id="p1">
+                                <p>
+                                    <h4 class="description" style="font-weight:600; color:rgb(90,90,90);">Principal
+                                        Partner</h4>
+                                </p><img class="img-fluid" src="assets/img/logos/gd.png" />
                             </div>
-
-
+                            <div class="col-lg-2 col-half-offset" id="p2">
+                                <p>
+                                    <h4 class="description" style="font-weight:600; color:rgb(90,90,90);">Venue Partner</h4>
+                                </p>
+                                <img class="img-fluid" src="assets/img/logos/uem.png" />
+                            </div>
+                            <div class="col-lg-2 col-half-offset" id="p3">
+                                <p>
+                                    <h4 class="description" style="color:white;">Hello</h4>
+                                </p><img class="img-fluid" src="assets/img/logos/iem.png" />
+                            </div>
+                            <div class="col-lg-2 col-half-offset" id="p4">
+                                <p>
+                                    <h4 class="description" style="font-weight:600; color:rgb(90,90,90);">Brought To
+                                        You By</h4>
+                                </p><img class="img-fluid" src="assets/img/logos/gdg.png" />
+                            </div>
+                            <div class="col-lg-2 col-half-offset" id="p5">
+                                <p>
+                                    <h4 class="description" style="color:white;">Hello</h4>
+                                </p><img class="img-fluid" src="assets/img/logos/wtm.png" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!--/.First row-->
-
                 <p>&nbsp;</p>
-
             </div>
         </div>
     </div>
-
     <div id="location" width="100%">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.504846616053!2d88.48798741435742!3d22.560213985189154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020b267a3cdc13%3A0xb3b21d652126f40!2sUniversity+of+Engineering+%26+Management%2C+New+Town!5e0!3m2!1sen!2sin!4v1539543476935" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.504846616053!2d88.48798741435742!3d22.560213985189154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a020b267a3cdc13%3A0xb3b21d652126f40!2sUniversity+of+Engineering+%26+Management%2C+New+Town!5e0!3m2!1sen!2sin!4v1539543476935"
+            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-
-
     <section class="to-top">
         <div class="container">
             <div class="row">
@@ -290,42 +450,46 @@
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">DevFest 2018, Kolkata</h5>
-                    <p class="grey-text text-lighten-4">Made with <i class="fa fa-heart" id="heart"></i> in the City of Joy</p>
+                    <p class="grey-text text-lighten-4">Made with <i class="fa fa-heart" id="heart"></i> in the City of
+                        Joy</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text"></h5>
                     <ul>
                         <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/gdgkolkata?s=09" target="_blank" data-original-title="Follow us on Twitter">
-                            <i class="fa fa-twitter"></i>
-                        </a>
+                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/gdgkolkata?s=09"
+                                target="_blank" data-original-title="Follow us on Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/GDGKolkata/" target="_blank" data-original-title="Join us on Facebook">
-                            <i class="fa fa-facebook" id="fb"></i>
-                        </a>
+                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.facebook.com/GDGKolkata/"
+                                target="_blank" data-original-title="Join us on Facebook">
+                                <i class="fa fa-facebook" id="fb"></i>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.meetup.com/GDG-Kolkata/" target="_blank" data-original-title="Keep Track at Meetup">
-                            <i class="fa fa-meetup"></i>
-                        </a>
+                            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.meetup.com/GDG-Kolkata/"
+                                target="_blank" data-original-title="Keep Track at Meetup">
+                                <i class="fa fa-meetup"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-
-
     <!--   Core JS Files   -->
     <script src="assets/js/core/jquery.min.js"></script>
     <script src="assets/js/core/popper.min.js"></script>
     <script src="assets/js/bootstrap-material-design.js"></script>
     <!-- Material Kit Core initialisations of plugins and Bootstrap Material Design Library -->
     <script src="assets/js/material-kit.js?v=2.0.2"></script>
-
     <script src="assets/assets-custom/js/material-kit-demo.js"></script>
-    <script src="assets/assets-custom/js/main.js"></script>
+    <!-- <script src="assets/assets-custom/js/GridHorizontal.js"></script> -->
+    <!-- <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+    <script src="assets/assets-custom/main.js"></script>
     <script src="assets/assets-custom/index.js"></script>
 </body>
 

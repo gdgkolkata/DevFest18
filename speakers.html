@@ -42,7 +42,7 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="dropdown nav-item">
-                        <a href="./index.html" data-page="index" class="nav-link">
+                        <a href="./" data-page="index" class="nav-link">
                             <span><b>Home</b></span>
                         </a>
                     </li>
@@ -66,11 +66,11 @@
                              <span ><b id="header_text">Blog</b></span>
                         </a>
                     </li> -->
-                    <li class="nav-item">
+                   <!--  <li class="nav-item">
                         <a href="./about" data-page="about" class="nav-link">
                             <span><b id="header_text">About</b></span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a target="blank" class="nav-link" href="https://www.eventbrite.com/e/devfest-kolkata-2018-devfestkol-tickets-50524204255">
                             <span class="btn" id="joinbtn"><b id="header_text">Register</b></span>
@@ -96,7 +96,7 @@
         <hr class="custom-horizontal-rule" />
         <div class="container no-padding container-sub-page">
             <div id="container-speakers" class="row">
-                
+
             </div>
         </div>
     </div>
@@ -199,7 +199,7 @@
                 '
                 return template;
             }
-            
+
             var html = '';
             $.getJSON('https://sessionize.com/api/v2/2uq21o2i/view/speakers', function(speakers){
                 speakers.forEach(function(speaker){
@@ -207,7 +207,7 @@
                 });
                 $('#container-speakers').append(html);
             });
-            
+
         });
     </script>
 </body>
