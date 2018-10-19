@@ -5,54 +5,13 @@
 version: 2
 jobs:
   build:
-    docker:
-      # specify the version you desire here
-      - image: circleci/php:7.1-browsers
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mysql:9.4
-
-    working_directory: ~/
-
-    steps:
-      - checkout
-
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "composer.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
-
-      - run: composer install -n --prefer-dist
-
-      - save_cache:
-          paths:
-            - ./vendor
-          key: v1-dependencies-{{ checksum "composer.json" }}
-
-      # run tests!
-      - run: phpunit
-
-  dependencies:
     machine: true
     steps:
       - curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
       - sudo dpkg -i cf-cli_amd64.deb
       - cf -v
-
-  test:
-    machine: true
-    steps:
       - cf api https://api.ng.bluemix.net
       - cf auth $BLUEMIX_USER $BLUEMIX_PASSWORD
       - cf target -o $BLUEMIX_ORG -s $BLUEMIX_SPACE
       - cf a
-
-  deployment:
-    machine: true
-    branch: master
-    steps:
       - cf push
