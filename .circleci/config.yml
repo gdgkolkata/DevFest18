@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - checkout
-      - echo "hello"
+      - run: echo "hello"
