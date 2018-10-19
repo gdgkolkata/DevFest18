@@ -7,7 +7,7 @@ jobs:
   build:
     machine: true
 
-    working_directory: ~/
+    working_directory: ~/DevFest18
 
     steps:
       - checkout
