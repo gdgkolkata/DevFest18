@@ -50,7 +50,6 @@ jobs:
       - cf a
 
   deployment:
-    production:
-      branch: master
-      steps:
-        - cf push
+    branch: master
+    steps:
+      - cf push
