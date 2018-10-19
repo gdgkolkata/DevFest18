@@ -17,6 +17,4 @@ jobs:
       - run: cf -v
       - run: cf api https://api.ng.bluemix.net
       - run: cf auth $BLUEMIX_USER $BLUEMIX_PASSWORD
-      - run: cf target -o $BLUEMIX_ORG -s $BLUEMIX_SPACE
-      - run: cf a
       - run: cf push
