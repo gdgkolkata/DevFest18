@@ -1,0 +1,645 @@
+[
+  {
+    "date": "2018-11-03T00:00:00",
+    "rooms": [
+      {
+        "id": 2739,
+        "name": "Mobile Track",
+        "sessions": [
+          {
+            "id": "f2d68037-d7fc-4ac1-94db-f7c9c54c98f3",
+            "title": "Registration",
+            "description": null,
+            "startsAt": "2018-11-03T07:45:00",
+            "endsAt": "2018-11-03T08:30:00",
+            "isServiceSession": true,
+            "isPlenumSession": true,
+            "speakers": [],
+            "categories": [],
+            "roomId": 2739,
+            "room": "Mobile Track"
+          },
+          {
+            "id": "67313",
+            "title": "Experiments.on(context): A State Management Adventure In Flutter",
+            "description": "State management is listed as one of the major pain points by the Flutter Developers. As it turns out, flutter has a list of amazing tools for handling the same, all that's missing in their lives... is this session. :-p\r\n\r\nThis is a hands-on session, which has been designed to be very focused and efficient in focusing on the concepts\r\nSections are as follows:\r\n> De-mystifying BuildContext and setState\r\n> Passing state changes via constructor and setState() function\r\n> InheritedWidget, how it works. ScopedModel, why/when not to use it\r\n> Promoted to a Plumber with Streams\r\n> RxDart helps with init. BehaviorSubject is just a stream with a cache tho\r\n> BLoC, and the layered way of writing flutter apps.\r\n\r\nWill time-test it at least in two sessions before the final delivery",
+            "startsAt": "2018-11-03T08:50:00",
+            "endsAt": "2018-11-03T09:50:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "cb695741-6694-4472-a7a2-b5771f06f477",
+                "name": "Raveesh Agarwal"
+              }
+            ],
+            "categories": [
+              {
+                "id": 2883,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 13684,
+                    "name": "Workshop"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 2884,
+                "name": "Track",
+                "categoryItems": [
+                  {
+                    "id": 13699,
+                    "name": "Mobile"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 2886,
+                "name": "Tags",
+                "categoryItems": [
+                  {
+                    "id": 13694,
+                    "name": "Flutter"
+                  }
+                ],
+                "sort": 4
+              }
+            ],
+            "roomId": 2739,
+            "room": "Mobile Track"
+          },
+          {
+            "id": "67156",
+            "title": "Flutter : Do More with Less Code",
+            "description": "Have you ever joined a new company and faced the daunting task of being asked to build a native mobile app from scratch in under three months? And told that in addition to the usual complexities (logic, databases, testing), you also need to deliver on a rich user experience that involves custom animations? I have.\r\n\r\nAnd what if I told you it’s not just possible, it’s fun -- and it doesn’t take three months. You can do it in two. And, by taking advantage of the built-in Firebase integration, you can take advantage of rich services for authentication, storage, databases and machine learning.\r\n\r\nWelcome to Flutter. A new open-source mobile SDK from Google that allows you to “build beautiful native apps in record time” -- and deliver unique apps for Android and iOS from a single codebase written in Dart. ",
+            "startsAt": "2018-11-03T10:05:00",
+            "endsAt": "2018-11-03T11:05:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "20bd7c5d-9811-404c-befd-df22f8c48f9f",
+                "name": "Pooja Bhaumik"
+              }
+            ],
+            "categories": [
+              {
+                "id": 2883,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 13683,
+                    "name": "Session"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 2884,
+                "name": "Track",
+                "categoryItems": [
+                  {
+                    "id": 13699,
+                    "name": "Mobile"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 2886,
+                "name": "Tags",
+                "categoryItems": [
+                  {
+                    "id": 13694,
+                    "name": "Flutter"
+                  }
+                ],
+                "sort": 4
+              }
+            ],
+            "roomId": 2739,
+            "room": "Mobile Track"
+          },
+          {
+            "id": "f4b2e8d2-f77c-415e-ac68-dc1e359af072",
+            "title": "Keynote",
+            "description": null,
+            "startsAt": "2018-11-03T12:10:00",
+            "endsAt": "2018-11-03T13:20:00",
+            "isServiceSession": true,
+            "isPlenumSession": true,
+            "speakers": [],
+            "categories": [],
+            "roomId": 2739,
+            "room": "Mobile Track"
+          },
+          {
+            "id": "67151",
+            "title": "Freshworks' journey to cross-platform development",
+            "description": "This talk will elaborate on Freshworks' journey to class-platform development for mobile apps. It covers on why we decided to do a common code base solution, strategies, study we took and the decision(GoMobile) we came up with. Also how writing Golang code solved the problem and how GoMobile tool works under the hood to enable code sharing between platforms :)",
+            "startsAt": "2018-11-03T14:15:00",
+            "endsAt": "2018-11-03T15:15:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "40ee2eed-e7c4-47fc-baf4-f31b50ff6d77",
+                "name": "Vignesh Ramachandra"
+              }
+            ],
+            "categories": [
+              {
+                "id": 2883,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 13683,
+                    "name": "Session"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 2884,
+                "name": "Track",
+                "categoryItems": [
+                  {
+                    "id": 13699,
+                    "name": "Mobile"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 2886,
+                "name": "Tags",
+                "categoryItems": [],
+                "sort": 4
+              }
+            ],
+            "roomId": 2739,
+            "room": "Mobile Track"
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      },
+      {
+        "id": 2740,
+        "name": "Cloud Track",
+        "sessions": [
+          {
+            "id": "67600",
+            "title": "Introduction to Cyclical Learning Rates for training Neural Nets",
+            "description": "Recently, an AI education firm named fast.ai topped a Kaggle competition beating researchers from Google, Amazon and Intel AI research. One of the ingredients that allowed them this success is the effective use of Cyclical Learning Rates in their models. CLR is not a well-studied topic and it is still not accepted by the community because it was proposed by an organization which is not that much in the AI limelight. But CLR has shown some exceptional results in the training of Neural Nets. ",
+            "startsAt": "2018-11-03T09:20:00",
+            "endsAt": "2018-11-03T10:20:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "43829f01-f979-48a4-9e05-eb794b92d64f",
+                "name": "Sayak Paul"
+              }
+            ],
+            "categories": [
+              {
+                "id": 2883,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 13682,
+                    "name": "Lightning talk"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 2884,
+                "name": "Track",
+                "categoryItems": [
+                  {
+                    "id": 13700,
+                    "name": "Cloud"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 2886,
+                "name": "Tags",
+                "categoryItems": [
+                  {
+                    "id": 13695,
+                    "name": "ML"
+                  }
+                ],
+                "sort": 4
+              }
+            ],
+            "roomId": 2740,
+            "room": "Cloud Track"
+          },
+          {
+            "id": "67597",
+            "title": "Flutter Theming & Animation",
+            "description": "In this talk, I will cover everything which is related to App theming and animation in Flutter which helps a developer to make his app more appealing. How one can set the global theme through out the app and customise accordingly will be covered. All the type of animations like tween animation, physics based animation will also getting covered for Flutter in this talk.",
+            "startsAt": "2018-11-03T10:45:00",
+            "endsAt": "2018-11-03T11:45:00",
+            "isServiceSession": false,
+            "isPlenumSession": false,
+            "speakers": [
+              {
+                "id": "d9bb8d03-9d91-480f-b196-1bb068e63b8a",
+                "name": "Dhrumil Shah"
+              }
+            ],
+            "categories": [
+              {
+                "id": 2883,
+                "name": "Session format",
+                "categoryItems": [
+                  {
+                    "id": 13683,
+                    "name": "Session"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 2884,
+                "name": "Track",
+                "categoryItems": [
+                  {
+                    "id": 13699,
+                    "name": "Mobile"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 2886,
+                "name": "Tags",
+                "categoryItems": [],
+                "sort": 4
+              }
+            ],
+            "roomId": 2740,
+            "room": "Cloud Track"
+          }
+        ],
+        "hasOnlyPlenumSessions": false
+      }
+    ],
+    "timeSlots": [
+      {
+        "slotStart": "07:45:00",
+        "rooms": [
+          {
+            "id": 2739,
+            "name": "Mobile Track",
+            "session": {
+              "id": "f2d68037-d7fc-4ac1-94db-f7c9c54c98f3",
+              "title": "Registration",
+              "description": null,
+              "startsAt": "2018-11-03T07:45:00",
+              "endsAt": "2018-11-03T08:30:00",
+              "isServiceSession": true,
+              "isPlenumSession": true,
+              "speakers": [],
+              "categories": [],
+              "roomId": 2739,
+              "room": "Mobile Track"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "08:50:00",
+        "rooms": [
+          {
+            "id": 2739,
+            "name": "Mobile Track",
+            "session": {
+              "id": "67313",
+              "title": "Experiments.on(context): A State Management Adventure In Flutter",
+              "description": "State management is listed as one of the major pain points by the Flutter Developers. As it turns out, flutter has a list of amazing tools for handling the same, all that's missing in their lives... is this session. :-p\r\n\r\nThis is a hands-on session, which has been designed to be very focused and efficient in focusing on the concepts\r\nSections are as follows:\r\n> De-mystifying BuildContext and setState\r\n> Passing state changes via constructor and setState() function\r\n> InheritedWidget, how it works. ScopedModel, why/when not to use it\r\n> Promoted to a Plumber with Streams\r\n> RxDart helps with init. BehaviorSubject is just a stream with a cache tho\r\n> BLoC, and the layered way of writing flutter apps.\r\n\r\nWill time-test it at least in two sessions before the final delivery",
+              "startsAt": "2018-11-03T08:50:00",
+              "endsAt": "2018-11-03T09:50:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "cb695741-6694-4472-a7a2-b5771f06f477",
+                  "name": "Raveesh Agarwal"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 2883,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 13684,
+                      "name": "Workshop"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 2884,
+                  "name": "Track",
+                  "categoryItems": [
+                    {
+                      "id": 13699,
+                      "name": "Mobile"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 2886,
+                  "name": "Tags",
+                  "categoryItems": [
+                    {
+                      "id": 13694,
+                      "name": "Flutter"
+                    }
+                  ],
+                  "sort": 4
+                }
+              ],
+              "roomId": 2739,
+              "room": "Mobile Track"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "09:20:00",
+        "rooms": [
+          {
+            "id": 2740,
+            "name": "Cloud Track",
+            "session": {
+              "id": "67600",
+              "title": "Introduction to Cyclical Learning Rates for training Neural Nets",
+              "description": "Recently, an AI education firm named fast.ai topped a Kaggle competition beating researchers from Google, Amazon and Intel AI research. One of the ingredients that allowed them this success is the effective use of Cyclical Learning Rates in their models. CLR is not a well-studied topic and it is still not accepted by the community because it was proposed by an organization which is not that much in the AI limelight. But CLR has shown some exceptional results in the training of Neural Nets. ",
+              "startsAt": "2018-11-03T09:20:00",
+              "endsAt": "2018-11-03T10:20:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "43829f01-f979-48a4-9e05-eb794b92d64f",
+                  "name": "Sayak Paul"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 2883,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 13682,
+                      "name": "Lightning talk"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 2884,
+                  "name": "Track",
+                  "categoryItems": [
+                    {
+                      "id": 13700,
+                      "name": "Cloud"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 2886,
+                  "name": "Tags",
+                  "categoryItems": [
+                    {
+                      "id": 13695,
+                      "name": "ML"
+                    }
+                  ],
+                  "sort": 4
+                }
+              ],
+              "roomId": 2740,
+              "room": "Cloud Track"
+            },
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "10:05:00",
+        "rooms": [
+          {
+            "id": 2739,
+            "name": "Mobile Track",
+            "session": {
+              "id": "67156",
+              "title": "Flutter : Do More with Less Code",
+              "description": "Have you ever joined a new company and faced the daunting task of being asked to build a native mobile app from scratch in under three months? And told that in addition to the usual complexities (logic, databases, testing), you also need to deliver on a rich user experience that involves custom animations? I have.\r\n\r\nAnd what if I told you it’s not just possible, it’s fun -- and it doesn’t take three months. You can do it in two. And, by taking advantage of the built-in Firebase integration, you can take advantage of rich services for authentication, storage, databases and machine learning.\r\n\r\nWelcome to Flutter. A new open-source mobile SDK from Google that allows you to “build beautiful native apps in record time” -- and deliver unique apps for Android and iOS from a single codebase written in Dart. ",
+              "startsAt": "2018-11-03T10:05:00",
+              "endsAt": "2018-11-03T11:05:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "20bd7c5d-9811-404c-befd-df22f8c48f9f",
+                  "name": "Pooja Bhaumik"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 2883,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 13683,
+                      "name": "Session"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 2884,
+                  "name": "Track",
+                  "categoryItems": [
+                    {
+                      "id": 13699,
+                      "name": "Mobile"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 2886,
+                  "name": "Tags",
+                  "categoryItems": [
+                    {
+                      "id": 13694,
+                      "name": "Flutter"
+                    }
+                  ],
+                  "sort": 4
+                }
+              ],
+              "roomId": 2739,
+              "room": "Mobile Track"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "10:45:00",
+        "rooms": [
+          {
+            "id": 2740,
+            "name": "Cloud Track",
+            "session": {
+              "id": "67597",
+              "title": "Flutter Theming & Animation",
+              "description": "In this talk, I will cover everything which is related to App theming and animation in Flutter which helps a developer to make his app more appealing. How one can set the global theme through out the app and customise accordingly will be covered. All the type of animations like tween animation, physics based animation will also getting covered for Flutter in this talk.",
+              "startsAt": "2018-11-03T10:45:00",
+              "endsAt": "2018-11-03T11:45:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "d9bb8d03-9d91-480f-b196-1bb068e63b8a",
+                  "name": "Dhrumil Shah"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 2883,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 13683,
+                      "name": "Session"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 2884,
+                  "name": "Track",
+                  "categoryItems": [
+                    {
+                      "id": 13699,
+                      "name": "Mobile"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 2886,
+                  "name": "Tags",
+                  "categoryItems": [],
+                  "sort": 4
+                }
+              ],
+              "roomId": 2740,
+              "room": "Cloud Track"
+            },
+            "index": 1
+          }
+        ]
+      },
+      {
+        "slotStart": "12:10:00",
+        "rooms": [
+          {
+            "id": 2739,
+            "name": "Mobile Track",
+            "session": {
+              "id": "f4b2e8d2-f77c-415e-ac68-dc1e359af072",
+              "title": "Keynote",
+              "description": null,
+              "startsAt": "2018-11-03T12:10:00",
+              "endsAt": "2018-11-03T13:20:00",
+              "isServiceSession": true,
+              "isPlenumSession": true,
+              "speakers": [],
+              "categories": [],
+              "roomId": 2739,
+              "room": "Mobile Track"
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "14:15:00",
+        "rooms": [
+          {
+            "id": 2739,
+            "name": "Mobile Track",
+            "session": {
+              "id": "67151",
+              "title": "Freshworks' journey to cross-platform development",
+              "description": "This talk will elaborate on Freshworks' journey to class-platform development for mobile apps. It covers on why we decided to do a common code base solution, strategies, study we took and the decision(GoMobile) we came up with. Also how writing Golang code solved the problem and how GoMobile tool works under the hood to enable code sharing between platforms :)",
+              "startsAt": "2018-11-03T14:15:00",
+              "endsAt": "2018-11-03T15:15:00",
+              "isServiceSession": false,
+              "isPlenumSession": false,
+              "speakers": [
+                {
+                  "id": "40ee2eed-e7c4-47fc-baf4-f31b50ff6d77",
+                  "name": "Vignesh Ramachandra"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 2883,
+                  "name": "Session format",
+                  "categoryItems": [
+                    {
+                      "id": 13683,
+                      "name": "Session"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 2884,
+                  "name": "Track",
+                  "categoryItems": [
+                    {
+                      "id": 13699,
+                      "name": "Mobile"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 2886,
+                  "name": "Tags",
+                  "categoryItems": [],
+                  "sort": 4
+                }
+              ],
+              "roomId": 2739,
+              "room": "Mobile Track"
+            },
+            "index": 0
+          }
+        ]
+      }
+    ]
+  }
+]
