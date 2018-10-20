@@ -72,6 +72,16 @@
     color: #00aced;
 }
 
+#footer #top-button {
+    position: absolute;
+    right: 0px;
+    padding: 25px 25px 28px 15px;
+    background-color: rgba(83, 109, 254, 0.05);
+    margin: -6px 0px 0px 0px;
+    color: inherit;
+    z-index: 999;
+}
+
 @media (max-width: 992px) {
     #footer .col-lg-9 {
         text-align: left;
@@ -88,15 +98,21 @@
     #footer .fa {
         font-size: 16px;
     }
+
+    #footer #top-button {
+        padding: 63px 25px 63px 15px;
+    }
+
+    #footer #top-button .fa{
+        font-size: 20px;
+    }
+
+    #footer .copyright{
+        padding-top: 10px;
+    }
 }
-#footer #top-button{
-    position: absolute;
-    right: 0px;
-    padding: 25px 25px 28px 15px;    
-    background-color: rgba(83, 109, 254, 0.05);;
-    margin: -6px 0px 0px 0px;
-    color: inherit;
-}
+
+
 
 /* For scroll bar */
 body::-webkit-scrollbar {
