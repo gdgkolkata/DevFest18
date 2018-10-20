@@ -1,11 +1,10 @@
-$(document).ready(function(){
+$(document).ready(function () {
 	// $('.nav-link').click(function(event){
 	// 	event.preventDefault();
 	// 	event.returnValue = false;
 	// });
 	// $('#photogrid').GridHorizontal();
-	var rockstars = [
-		{
+	var rockstars = [{
 			"name": "Rivu Chakraborty",
 			"cover": "default",
 			"pic": "https://sessionize.com/image?f=fd31d66d66d823a37ee37596ab8426c7,400,400,True,False,a72ed7ee-704c-453a-9d4e-ca5014ed0e5a.jpg",
@@ -80,18 +79,18 @@ $(document).ready(function(){
 	 * Using Durstenfeld shuffle algorithm.
 	 */
 	function shuffleArray(array) {
-	    for (var i = array.length - 1; i > 0; i--) {
-	        var j = Math.floor(Math.random() * (i + 1));
-	        var temp = array[i];
-	        array[i] = array[j];
-	        array[j] = temp;
-	    }
-	    return array;
+		for (var i = array.length - 1; i > 0; i--) {
+			var j = Math.floor(Math.random() * (i + 1));
+			var temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+		}
+		return array;
 	}
 
 	var biglist = [];
 	for (var i = 0; i < rockstars.length; i++) {
-	    biglist.push(i);
+		biglist.push(i);
 	}
 
 	biglist = shuffleArray(biglist);
@@ -100,14 +99,24 @@ $(document).ready(function(){
 
 	console.log(tinylist);
 
-	for(var i=1; i<=4;i++){
+	for (var i = 1; i <= 4; i++) {
 
-		var data = rockstars[tinylist[i-1]];
+		var data = rockstars[tinylist[i - 1]];
 
-		$('#speaker-'+i+"-name").empty().append(data["name"]+"<small>"+data["desc"]+"</small>");
-		$('#speaker-'+i+"-pic").attr("src", data["pic"]);
+		$('#speaker-' + i + "-name").empty().append(data["name"] + "<small>" + data["desc"] + "</small>");
+		$('#speaker-' + i + "-pic").attr("src", data["pic"]);
 	}
 
-
+	$('#top-button').on('click', function (event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html').animate({
+				scrollTop: 0
+			}, 800, function () {
+				window.location.hash = hash;
+			});
+		} 
+	});
 
 });

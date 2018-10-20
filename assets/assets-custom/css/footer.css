@@ -76,10 +76,15 @@
     position: absolute;
     right: 0px;
     padding: 25px 25px 28px 15px;
-    background-color: rgba(83, 109, 254, 0.05);
+    background-color: rgba(83, 109, 254, 0.1);
     margin: -6px 0px 0px 0px;
     color: inherit;
     z-index: 999;
+}
+
+.coming-soon{
+    padding-top: 15%;
+    padding-bottom: 10%;
 }
 
 @media (max-width: 992px) {
@@ -101,6 +106,7 @@
 
     #footer #top-button {
         padding: 63px 25px 63px 15px;
+        margin-top: -6.8px;
     }
 
     #footer #top-button .fa{
@@ -109,6 +115,11 @@
 
     #footer .copyright{
         padding-top: 10px;
+    }
+
+    .coming-soon{
+        padding-top: 35%;
+        padding-bottom: 20%;
     }
 }
 
