@@ -2,4 +2,4 @@
 applications:
  - name: devfest
    host: devfest
-   memory: 256M
+   memory: 2048M
