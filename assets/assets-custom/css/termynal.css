@@ -17,10 +17,10 @@
     max-width: 100%;
     background: var(--color-bg);
     color: var(--color-text);
-    font-size: 18px;
+    font-size: 1em;
     font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
     border-radius: 4px;
-    padding: 75px 45px 35px;
+    padding: 35px 45px 35px;
     position: relative;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -31,7 +31,7 @@
     position: absolute;
     top: 15px;
     left: 15px;
-    display: inline-block;
+    display: none;
     width: 15px;
     height: 15px;
     border-radius: 50%;
