@@ -20,6 +20,7 @@
     <link href="assets/assets-custom/css/team/style.css" rel="stylesheet">
     <link href="assets/assets-custom/css/base.css" rel="stylesheet">
     <link href="assets/assets-custom/css/footer.css" rel="stylesheet">
+    <link href="assets/assets-custom/css/termynal.css" rel="stylesheet" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
@@ -101,8 +102,6 @@
         </div>
     </div>
     <div id="footer">
-        <hr style="margin-bottom: 5px;" />
-
         <a href="#top" id="top-button">
             <i class="fa fa-arrow-up" aria-hidden="true"></i>
         </a>
@@ -138,7 +137,7 @@
         <hr />
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-xs-12 footer-details">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 footer-details">
                     <span><b>ABOUT</b></span>
                     <p>
                         <a href="https://facebook.com/pg/GDGKolkata/about/" target="_blank">GDG Kolkata</a><br />
@@ -149,7 +148,7 @@
                         <a href="https://twitter.com/hashtag/devfest18" target="_blank"><b>#DevFest18</b></a>
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-6 col-xs-12 footer-details">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 footer-details">
                     <span><b>ABOUT WTM</b></span>
                     <p>
                         <a href="https://facebook.com/WTMKolkata/" target="_blank">WTM Kolkata</a><br />
@@ -166,11 +165,44 @@
                     <img src="assets/img/kit/gdg-logo-t.png" alt="gdg-logo" />
                 </div>
                 <div class="col-lg-9 copyright">
-                    &copy; Copyright 2018 | GDG Kolkata
+                    &copy; Copyright 2018 | GDG Kolkata | <a href="#" data-toggle="modal" onclick="var term = new Termynal('#termynal', {lineDelay: 750}); $('#myModal').css('padding-right', '0px !important');" data-target="#myModal">Devel❤️er Credits</a>
                 </div>
             </div>
         </div>
     </div>
+    </footer>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog" style="margin: 0 !important; width: calc(100vw + 15px) !important;">
+  <div class="modal-dialog" style="margin: 0 !important; max-width: calc(100vw + 15px) !important; height: 100vh !important;">
+    <!-- Modal content-->
+    <div class="modal-content" style="height: 100vh !important">
+      <div class="modal-body">
+        <div id="termynal" data-ty-startDelay="600" style="height: 83vh;">
+            <span data-ty="input">credits-roll</span>
+            <span data-ty>Credits</span>
+            <span data-ty>Developers: </span>
+            <span data-ty>&nbsp;&nbsp;&nbsp;&nbsp;[1] <a href="https://xprilion.com" target="_blank">Anubhav Singh</a></span>
+            <span data-ty>&nbsp;&nbsp;&nbsp;&nbsp;[2] <a href="https://alfarhanzahedi.com/" target="_blank">Alfarhan Zahedi</a></span>
+            <span data-ty>&nbsp;&nbsp;&nbsp;&nbsp;[3] <a href="https://linkedin.com/in/shuvam-manna" target="_blank">Shuvam Manna</a></span>
+            <span data-ty>&nbsp;&nbsp;&nbsp;&nbsp;[4] <a href="#" target="_blank">Suvradip Ghosh</a></span>
+            <span data-ty>Designer: </span>
+            <span data-ty>&nbsp;&nbsp;&nbsp;&nbsp;[1] <a href="https://www.behance.net/ritwikraha" target="_blank">Ritwik Raha</a></span>
+            <span data-ty>---------------------------------------------------</span>
+            <span data-ty="input">Fork us on: https://github.com/xprilion/DevFest18</span>
+            <span data-ty>---------------------------------------------------</span>
+            <span data-ty="input">Have a nice day!</span>
+            </span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
     <!--   Core JS Files   -->
     <script src="assets/js/core/jquery.min.js"></script>
@@ -180,6 +212,7 @@
     <script src="assets/js/material-kit.js?v=2.0.2"></script>
     <!-- Fixed Sidebar Nav - js With initialisations For Demo Purpose, Don't Include it in your project -->
     <script src="assets/assets-custom/js/material-kit-demo.js"></script>
+    <script src="assets/assets-custom/termynal.min.js"></script>
     <script src="assets/assets-custom/main.js"></script>
     <script>
         $('document').ready(function () {
