@@ -89,3 +89,22 @@
         opacity: 0;
     }
 }
+
+
+.termynal-dash-divider{
+    white-space:nowrap; 
+    overflow:hidden;
+}
+
+.termynal-tab{
+    padding-left: 40px;
+}
+
+@media (max-width: 360px) and (max-height: 639px){
+    .termynal-tab{
+        padding-left: 10px;
+    }
+    #termynal{
+        font-size: 12px;
+    }
+}
