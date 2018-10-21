@@ -82,6 +82,11 @@
     z-index: 999;
 }
 
+#footer .hide-bar{
+    padding: 0px;
+    margin: 0px;
+}
+
 .coming-soon{
     padding-top: 15%;
     padding-bottom: 10%;
@@ -116,6 +121,16 @@
     #footer .copyright{
         padding-top: 10px;
     }
+
+    #footer .hide-bar{
+        visibility: hidden;
+    }
+
+    #footer #dev-credits{
+        display: block;
+        padding-top: 5px;
+    }
+
 
     .coming-soon{
         padding-top: 35%;
