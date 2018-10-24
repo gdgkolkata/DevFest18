@@ -9,6 +9,7 @@
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="favicon.png">
     <link rel="icon" href="favicon.png">
+    <link rel="manifest" href="/manifest.json">
     <title>
         DevFest 18 Kolkata
     </title>
@@ -565,6 +566,14 @@
   </div>
 </div>
 
+
+    <script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                   .register('/sw.js')
+                   .then(function() { console.log("Service Worker Registered"); });
+        }
+        </script>
     <!--   Core JS Files   -->
     <script src="assets/js/core/jquery.min.js"></script>
     <script src="assets/js/core/popper.min.js"></script>
