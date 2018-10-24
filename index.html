@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="theme-color" content="#ffffff"/>
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="favicon.png">
     <link rel="icon" href="favicon.png">
@@ -35,20 +36,26 @@
         .card-profile {
           max-width: 320px;
           margin: 20px auto;
-          background-color: #e6e5e1;
-          border-radius: 0;
+          background-color: #fdfbf2;
+          border-radius: 5px;
           border: 0;
-          box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
+          box-shadow: 0.3em 0.3em 0.6em rgba(0, 0, 0, 0.2);
+          transition:0.4s ease;
+        }
+
+        .card-profile:hover
+        {
+            box-shadow: 0.6em 0.6em 1em rgba(0, 0, 0, 0.2);
         }
         .card-profile .card-img-top {
-          border-radius: 0;
+          border-radius: 5px 5px 0 0;
         }
         .card-profile .card-img-profile {
           max-width: 100%;
           border-radius: 50%;
           margin-top: -95px;
           margin-bottom: 35px;
-          border: 5px solid #e6e5e1;
+          
         }
         .card-profile .card-title {
           margin-bottom: 50px;
@@ -81,6 +88,15 @@
           color: #2d4474;
         }
 
+        #top-button
+        {
+            font-size:20px;
+            transition: 0.3s ease;
+        }
+        #top-button:hover{
+            color:white;
+            background:rgb(0,101,202);
+        }
         .tab { margin-left: 40px; }
 /*
         .grid-item { width: 25%; }
@@ -194,7 +210,7 @@
                     <!--Second column-->
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s" style="text-align:left;">
                         <!--Card-->
-                        <h3 class="title" id="tracks"><b>&nbsp;</b></h3>
+                        <h2 class="title" id="tracks"><b>&nbsp;</b></h2>
                         <p>&nbsp;</p>
                         <span class="icon cloud"><i class="material-icons">
                                 cloud
@@ -245,7 +261,7 @@
                     <!-- <div id="rockstar_details"> -->
                     <div class="col-lg-3" style="text-align:left;">
                         <div class='card card-profile text-center'>
-                            <img alt='' class='card-img-top' id="speaker-1-cover" src='https://unsplash.it/340/160?image=354'>
+                            <img alt='' class='card-img-top' id="speaker-1-cover" src='https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7402cc297bdfbb4a4856e764971dc013&auto=format&fit=crop&w=750&q=80'>
                             <div class='card-block'>
                                 <img alt='' id="speaker-1-pic" class='card-img-profile' src='https://afcm.ca/wp-content/uploads/2018/06/no-photo.png'
                                     height="160px">
@@ -262,7 +278,7 @@
                     </div>
                     <div class="col-lg-3" style="text-align:left;">
                         <div class='card card-profile text-center'>
-                            <img alt='' id="speaker-2-cover" class='card-img-top' src='https://unsplash.it/340/160?image=354'>
+                            <img alt='' id="speaker-2-cover" class='card-img-top' src='https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7402cc297bdfbb4a4856e764971dc013&auto=format&fit=crop&w=600&q=80'>
                             <div class='card-block'>
                                 <img alt='' id="speaker-2-pic" class='card-img-profile' src='https://afcm.ca/wp-content/uploads/2018/06/no-photo.png'
                                     height="160px">
@@ -278,7 +294,7 @@
                     </div>
                     <div class="col-lg-3" style="text-align:left;">
                         <div class='card card-profile text-center'>
-                            <img alt='' id="speaker-3-cover" class='card-img-top' src='https://unsplash.it/340/160?image=354'>
+                            <img alt='' id="speaker-3-cover" class='card-img-top' src='https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7402cc297bdfbb4a4856e764971dc013&auto=format&fit=crop&w=750&q=80'>
                             <div class='card-block'>
                                 <img alt='' id="speaker-3-pic" class='card-img-profile' src='https://afcm.ca/wp-content/uploads/2018/06/no-photo.png'
                                     height="160px">
@@ -294,7 +310,7 @@
                     </div>
                     <div class="col-lg-3" style="text-align:left;">
                         <div class='card card-profile text-center'>
-                            <img alt='' id="speaker-4-cover" class='card-img-top' src='https://unsplash.it/340/160?image=354'>
+                            <img alt='' id="speaker-4-cover" class='card-img-top' src='https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7402cc297bdfbb4a4856e764971dc013&auto=format&fit=crop&w=750&q=80'>
                             <div class='card-block'>
                                 <img alt='' id="speaker-4-pic" class='card-img-profile' src='https://afcm.ca/wp-content/uploads/2018/06/no-photo.png'
                                     height="160px">
@@ -350,7 +366,11 @@
                 </div>
                 <!--/.First row-->
                 <div class="image-grid">
+                      <div class="row"><div class="col-lg-6" style="text-align:left;"><h2 class="title" id="campus_ambassador"><b>GDG Event Highlights</b></h2><br/></div></div> 
+                        
+                        
                     <div class="row">
+                            
                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                             <div class="hovereffect">
                                 <img src="assets/img/photo_grid/7.JPG" class="img-responsive" style="width: 100%; height: auto;" />
@@ -383,7 +403,13 @@
                             </div>
                         </div>
                     </div>
+
+                    
                 </div>
+                <div class="row"><br/><a href="https://developers.google.com/"><span class="description" id="details_redirect">View Album &nbsp;&nbsp;<i class="material-icons">
+
+                        arrow_forward
+                    </i></span></a></div>
                 <p>&nbsp;</p>
                 <div class="row mt-5 wow fadeIn" data-wow-delay="0.2s">
                     <div class="col-lg-6" style="text-align:left;">
@@ -395,8 +421,7 @@
                         <div class="row">
                             <div class="col-lg-2" id="p1">
                                 <p>
-                                    <h4 class="description" style="font-weight:600; color:rgb(90,90,90);">Principal
-                                        Partner</h4>
+                                    <h4 class="description" style="font-weight:600; color:rgb(90,90,90);">Powered By</h4>
                                 </p><img class="img-fluid" src="assets/img/logos/gd.png" />
                             </div>
                             <div class="col-lg-2 col-half-offset" id="p2">
@@ -434,8 +459,10 @@
     </div>
 
     <div id="footer">
-        <a href="#top" id="top-button">
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        <a href="#top" id="top-button" style="color:rgb(0,101,202); background:white;">
+                <i class="material-icons" style="color:rgb(0,101,202); background:white; font-size: 30px;">
+                        keyboard_arrow_up
+                        </i>
         </a>
         <div class="container" style="padding-top: 20px;">
 
@@ -444,6 +471,7 @@
                     <div class="share-social share">
                         <span><b>SHARE</b>
                             <a href="https://facebook.com/sharer/sharer.php" target="_blank"><i class="fa fa-facebook"></i></a>
+                            <a>&nbsp;</a>
                             <a href="https://twitter.com/home?status=Join%20in%20the%20GDG%20Kolkata%20DevFest18%20and%20have%20the%20experience%20of%20a%20lifetime!%20Register%20now%20at%20-%20https%3A//localhost/DevFest18/"
                                 target="_blank"><i class="fa fa-twitter"></i></a>
                         </span>
@@ -451,11 +479,11 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="share-social">
-                        <span><b>FOLLOW US</b>
-                            <a href="https://facebook.com/GDGKolkata/" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="https://twitter.com/gdgkolkata" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <span><b>FOLLOW US</b><a>&nbsp;</a>
+                            <a href="https://facebook.com/GDGKolkata/" target="_blank"><i class="fa fa-facebook"></i></a><a>&nbsp;</a>
+                            <a href="https://twitter.com/gdgkolkata" target="_blank"><i class="fa fa-twitter"></i></a><a>&nbsp;</a>
                             <a href="https://meetup.com/GDG-Kolkata/" target="_blank"><i class="fa fa-meetup"
-                                    aria-hidden="true"></i></a>
+                                    aria-hidden="true"></i></a><a>&nbsp;</a>
                         </span>
                     </div>
                 </div>
@@ -496,13 +524,13 @@
                 <div class="col-lg-3">
                     <img src="assets/img/kit/gdg-logo-t.png" alt="gdg-logo" />
                 </div>
-                <div class="col-lg-9 copyright">
+                <div class="col-lg-9 copyright" style="font-family: 'Open Sans', sans-serif;">
                     &copy; Copyright 2018 | GDG Kolkata <span class="hide-bar"> | </span><a id="dev-credits" href="#" data-toggle="modal" onclick="var term = new Termynal('#termynal', {lineDelay: 750}); $('#myModal').css('padding-right', '0px !important');" data-target="#myModal">Devel❤️er Credits</a>
                 </div>
             </div>
         </div>
     </div>
-    </footer>
+    
 
 
 <!-- Modal -->
@@ -521,15 +549,16 @@
             <span data-ty class="termynal-tab">[4] <a href="https://github.com/suvhradipghosh07" target="_blank">Suvhradip Ghosh</a></span>
             <span data-ty>Designer: </span>
             <span data-ty class="termynal-tab">[1] <a href="https://www.behance.net/ritwikraha" target="_blank">Ritwik Raha</a></span>
+            <span data-ty class="termynal-tab">[2] <a href="https://linkedin.com/in/shuvam-manna" target="_blank">Shuvam Manna</a></span>
             <span data-ty class="termynal-dash-divider">---------------------------------------------------</span>
             <span data-ty="input" style="word-break: break-all;">Fork us on: https://github.com/xprilion/DevFest18</span>
             <span data-ty class="termynal-dash-divider">---------------------------------------------------</span>
-            <span data-ty="input">Have a nice day!</span>
+            <span data-ty="input">Have an amazing day!</span>
             </span>
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" style="background:rgb(0,101,202);">Close</button>
       </div>
     </div>
 
