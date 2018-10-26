@@ -372,3 +372,9 @@ Other color edits
 #orange_text {
     color: rgb(252, 189, 0);
 }
+
+@media (max-width: 992px){
+    #sectionsNav{
+        height: 65px;
+    }
+}
