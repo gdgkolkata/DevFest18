@@ -3,7 +3,7 @@ body{
 }
 
 .card {
-    min-height: auto;
+    min-height: 400px;
     background: #fff;
     transition: 0.4s;
     margin: 8px;

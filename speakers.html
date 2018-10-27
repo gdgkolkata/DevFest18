@@ -262,12 +262,12 @@
                     speaker.profilePicture +
                     '" alt="">                                                                                 \
                             </div>                                                                                                                              \
-                            <h2 style="font-weight:400;">' +
+                            <h2 style="font-weight:400;" id="blue_text">' +
                     speaker.fullName +
-                    '</h2>  <br><!--                                                                                               \
-                     <p class="description">' +
-                    speaker.bio.split('.')[0] +
-                    '.</p>-->                                                                                            \
+                    '</h2>                                                                                                \
+                     <p class="description"><b>' +
+                    speaker.tagLine.split('.')[0] +
+                    '.</b></p>                                                                                            \
                             <span class="speaker-social">                                                                                                       \
                                 <ul>' +
                     getLinks(speaker.links) +
@@ -281,7 +281,7 @@
             }
 
             var html = '';
-            $.getJSON('https://sessionize.com/api/v2/2uq21o2i/view/speakers', function (speakers) {
+            $.getJSON('speakers.json', function (speakers) {
                 speakers.forEach(function (speaker) {
                     html += getTemplate(speaker);
                 });
