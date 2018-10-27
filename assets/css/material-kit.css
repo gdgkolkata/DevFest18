@@ -4502,7 +4502,7 @@ tbody.collapse.show {
 }
 
 .navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .navbar-light .navbar-text {
@@ -4577,7 +4577,7 @@ tbody.collapse.show {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    
     border-radius: 0.25rem;
 }
 
@@ -14430,10 +14430,10 @@ textarea {
 }
 
 .navbar.navbar-transparent {
-    background-color: transparent !important;
+    
     box-shadow: none;
     padding-top: 25px;
-    color: #fff;
+    
 }
 
 #navbar .navbar {
@@ -17406,10 +17406,7 @@ footer .pull-center {
         opacity: 1;
         overflow-y: scroll;
     }
-    .navbar.navbar-transparent .navbar-toggler .navbar-toggler-icon {
-        background-color: #fff;
-        color:rgb(64,64,64);
-    }
+    
     #bodyClick {
         height: 100%;
         width: 100%;

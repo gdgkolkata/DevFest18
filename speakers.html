@@ -281,7 +281,7 @@
             }
 
             var html = '';
-            $.getJSON('speakers.json', function (speakers) {
+            $.getJSON('speaker.json', function (speakers) {
                 speakers.forEach(function (speaker) {
                     html += getTemplate(speaker);
                 });

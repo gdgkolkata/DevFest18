@@ -69,7 +69,7 @@ body {
 
 .texter,
 .navbar-toggler-icon {
-    color: rgb(74, 74, 74);
+    color: rgb(74, 74, 74) !important;
 }
 
 .navbar-transparent .logo,
