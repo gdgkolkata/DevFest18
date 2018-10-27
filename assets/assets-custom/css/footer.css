@@ -75,7 +75,7 @@
 #footer #top-button {
     position: absolute;
     right: 0px;
-    padding: 25px 25px 28px 15px;
+    padding: 25px 25px 22.5px 20px;
     background-color: rgba(83, 109, 254, 0.1);
     margin: -6px 0px 0px 0px;
     color: inherit;
@@ -110,7 +110,7 @@
     }
 
     #footer #top-button {
-        padding: 63px 25px 63px 15px;
+        padding: 63px 20px 57px 20px;
         margin-top: -6.8px;
     }
 
