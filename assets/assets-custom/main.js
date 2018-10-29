@@ -24,7 +24,7 @@ $(document).ready(function () {
 			"name": "Dhrumil Shah",
 			"cover": "default",
 			"pic": "https://sessionize.com/image?f=4808c4edfd414400379bb11772643982,200,200,True,False,03-9d91-480f-b196-1bb068e63b8a.8bd9852d-a483-4902-aa93-2bb2ccffc21a.jpeg",
-			"desc": "<hr>Co-organizer at GDG Ahmedabad<br>Founder at Flutter Flakes, Android Developer since Android 2.1",
+			"desc": "<hr>Mobile Developer at Shipmnts, Co-organizer at GDG Ahmedabad<br>Founder at Flutter Flakes",
 			"fb": "fb",
 			"twitter": "twitter"
 		},
