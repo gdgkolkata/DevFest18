@@ -25,6 +25,71 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
     <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
     <!-- iframe removal -->
+    <style>
+        .schedule-container{
+            padding: 150px 0px 50px 0px;
+            font-family: 'Open Sans', sans-serif !important;
+        }
+        .sz-session{
+            background-color: #ffffff !important;
+        }
+
+        #sessionize .sz-grid .sz-session--service .sz-session__card, #sessionize .sz-grid .sz-session__card{ 
+            background: #ffffff !important;
+            border-top-color: #ffffff !important;
+            border: 1px solid #cccccc !important;
+            color: #000000 !important;
+            font-family: 'Open Sans', sans-serif !important;
+
+        }
+        #sessionize .sz-grid .sz-session__card:hover{
+            box-shadow: none !important;
+            background: rgba(83, 109, 254, 0.1) !important;
+        }
+        #sessionize .sz-session__tags li {
+            background: #4285F4 !important;
+            color: #ffffff !important;
+        }
+        #sessionize .sz-session__card .sz-session__room{
+            background: transparent !important;
+        }
+        #sessionize .sz-day__container .sz-time .sz-time__value{
+            padding-left: 10px;
+        }
+        #sessionize .sz-grid .sz-session__card a, #sessionize .sz-grid .sz-session__card a, #sessionize .sz-grid .sz-session__card a{
+            transition: none !important;
+        }
+        #sessionize .sz-grid .sz-session__card a:hover, #sessionize .sz-grid .sz-session__card a:focus, #sessionize .sz-grid .sz-session__card a:active{
+            box-shadow: none !important;
+            border-bottom: 1px solid #000000 !important;
+        }
+        #sessionize .sz-modal .sz-session__speakers li a{
+            color: #4285F4 !important;
+        }
+        #sessionize .sz-modal .sz-session__room{
+            background: #4285F4 !important;
+        }
+        #sessionize .sz-modal .sz-session__time{
+            background: transparent !important;
+            color: #000000 !important;
+        }
+        #sessionize .sz-modal .sz-speaker__name, .sz-modal .sz-speaker__tagline{
+            color: #4285F4 !important;
+        }
+        #sessionize .sz-modal .sz-speaker__link-icon{
+            color: #4285F4 !important;
+        }
+        #sessionize .sz-modal .sz-speaker__link:hover{
+            color: #ffffff !important;
+            background: #4285F4 !important;
+        }
+        #sessionize .sz-modal .sz-speaker__link:hover .sz-speaker__link-icon{
+            color: #ffffff !important;
+        }
+        #sessionize .sz-modal .sz-speaker__sessions li::before{
+            background-color: #4285F4 !important;
+        }
+    </style>
 </head>
 
 <body class="landing-page" id="top">
@@ -80,12 +145,16 @@
             </div>
         </div>
     </nav>
+    <!--
     <div class="container coming-soon" data-parallax="true">
         <p class="text-center"><img class="text-center" src="assets/img/kit/dunkathon.png" /></p>
         <h1 class="text-center"><span class="title">Coming Soon :)</span></h1>
         <p class="text-center">The page will be updated once the schedule is finalized. Stay Tuned.</p>
     </div>
-
+    -->
+    <div class="schedule-container">
+        <script type="text/javascript" src="https://sessionize.com/api/v2/xd8bqyt4/view/grid"></script>
+    </div>
     <div id="footer">
         <hr style="margin-bottom:6px"/>
         <a href="#top" id="top-button" style="background:rgba(83, 109, 254, 0.1);">
