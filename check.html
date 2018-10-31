@@ -217,7 +217,7 @@
     <div class="container">
         <div class="card card-container">
             <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
-            <img id="profile-img" class="profile-img-card" src="assets/img/q.png" />
+            <img id="profile-img" class="profile-img-card" src="assets/img/q-min.png" />
             <p id="profile-name" class="profile-name-card"></p>
             <form class="form-signin" id="checkForm">
                 <span id="reauth-email" class="reauth-email"></span>
@@ -373,15 +373,15 @@
              // res = result;
 
              if(res.status == "0"){
-                $('#profile-img').attr("src", "assets/img/e.png");
+                $('#profile-img').attr("src", "assets/img/e-min.png");
                 $('#checkForm').empty().append("<h3>Hey, your application is pending review.</h3><hr>");
              }
              else if(res.status == "1"){
-                $('#profile-img').attr("src", "assets/img/t.png");
+                $('#profile-img').attr("src", "assets/img/t-min.png");
                 $('#checkForm').empty().append("<h3>Congratulations! You're confirmed. Please check your email spam box and inbox.</h3><hr>");
              }
              else{
-                $('#profile-img').attr("src", "assets/img/e.png");
+                $('#profile-img').attr("src", "assets/img/e-min.png");
                 $('#checkForm').empty().append("<h3>Hey, something went wrong. Please try again later.</h3><hr>");
              }
           });
