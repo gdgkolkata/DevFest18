@@ -380,6 +380,13 @@
                 $('#profile-img').attr("src", "assets/img/t-min.png");
                 $('#checkForm').empty().append("<h3>Congratulations! You're confirmed. Please check your email spam box and inbox.</h3><hr>");
              }
+             else if(res.status == "4"){
+                $('#profile-img').attr("src", "assets/img/h-min.png");
+                $('#profile-img').css("height", "auto");
+                $('#profile-img').css("border-radius", "unset");
+                $('#profile-img').css("-webkit-border-radius", "unset");
+                $('#checkForm').empty().append("<h3>Confirmed? Obviously! Thank you for making GDG Kolkata DevFest 2018 possible!</h3><hr>");
+             }
              else{
                 $('#profile-img').attr("src", "assets/img/e-min.png");
                 $('#checkForm').empty().append("<h3>Hey, something went wrong. Please try again later.</h3><hr>");
