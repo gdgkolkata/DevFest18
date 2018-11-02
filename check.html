@@ -225,8 +225,8 @@
 
                 <button class="btn btn-lg btn-primary btn-block btn-signin g-recaptcha" type="submit" onclick="check_submit(event, form);">Check</button>
             </form><!-- /form -->
-            <a href="https://www.meetup.com/GDG-Kolkata/events/255454280/" class="forgot-password">
-                Register?
+            <a href="./" class="forgot-password">
+                Home
             </a>
         </div><!-- /card-container -->
     </div><!-- /container -->
@@ -374,7 +374,7 @@
 
              if(res.status == "0"){
                 $('#profile-img').attr("src", "assets/img/e-min.png");
-                $('#checkForm').empty().append("<h3>Hey, your application is pending review.</h3><hr>");
+                $('#checkForm').empty().append("<h3>We're sorry, your application was not found.</h3><hr>");
              }
              else if(res.status == "1"){
                 $('#profile-img').attr("src", "assets/img/t-min.png");
@@ -386,6 +386,10 @@
                 $('#profile-img').css("border-radius", "unset");
                 $('#profile-img').css("-webkit-border-radius", "unset");
                 $('#checkForm').empty().append("<h3>Confirmed? Obviously! Thank you for making GDG Kolkata DevFest 2018 possible!</h3><hr>");
+             }
+             else if(res.status == "99"){
+                $('#profile-img').attr("src", "assets/img/s-min.png");
+                $('#checkForm').empty().append("<h3>Sorry, we could not host you this time. Do catch the livestream on our website during the event! </h3><hr>");
              }
              else{
                 $('#profile-img').attr("src", "assets/img/e-min.png");
